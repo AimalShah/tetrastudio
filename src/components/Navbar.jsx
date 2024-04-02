@@ -33,6 +33,9 @@ return (
         Get Quote
       </button>
     </div>
+    <div className='mt-2'>
+    <Socials />
+    </div>
 
 
   </motion.div>

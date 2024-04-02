@@ -1,20 +1,17 @@
 import { useState } from 'react'
-import LogoImage from '../assets/Logo.svg'
+// import LogoImage from '../assets/Logo.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import { motion } from 'framer-motion'
 import { Link} from 'react-router-dom'
+import Socials from './Socials'
 
 export function MobileNavMenu ({navLinks , handleClick}) {
 
 return (
   <motion.div
-  className='lg:hidden w-screen h-[90vh] flex flex-col gap-10 fixed bg-white top-20 left-0 z-10 pt-2  '
+  className='lg:hidden w-screen h-[90vh] flex flex-col gap-10 fixed bg-white top-18 left-0 z-10 pt-2  '
   initial={{ clipPath : 'circle(0.4% at 100% 0)'}}
   animate={{clipPath : ' circle(140.7% at 99% 0)'}}
   transition={{duration : 0.4}}
@@ -32,16 +29,11 @@ return (
       }
     </div>
     <div className='text-center mt-4'>
-      <button className='bg-primary px-4 py-4 w-80 rounded-full text-white font-semibold'>
+      <button className='bg-accent px-4 py-4 w-80 rounded-full text-white font-semibold'>
         Get Quote
       </button>
     </div>
-    <div className='flex items-center justify-center gap-6'>
-      <FontAwesomeIcon icon={faSquareInstagram}  className='size-10 text-gray-600'/>
-      <FontAwesomeIcon icon={faSquareFacebook}  className='size-10 text-gray-600'/>
-      <FontAwesomeIcon icon={faSquareTwitter}  className='size-10 text-gray-600'/>
-      <FontAwesomeIcon icon={faTiktok}  className='size-10 text-gray-600'/>
-    </div>
+
 
   </motion.div>
 )
@@ -110,21 +102,21 @@ function Navbar() {
       Link : "/contact"
     }
   ]
-  
+ 
   const handleClick = () => {
     setIsActive(!isActive)
   }
   const [isActive , setIsActive] = useState(false);
 
   return (
-    <div className="overflow-hidden sticky top-0 bg-white">
+    <div className="overflow-hidden sticky top-0 bg-white z-20 p-4">
       <div className="container mx-auto px-2 flex justify-between items-center">
-        <div>
-            <img src={LogoImage} alt="Logo" className='size-20' />
+        <div className='text-4xl font-bold'>
+            TETRA
         </div>
         <div className='z-20'>
             <button 
-            className='size-[45px] lg:size-[60px] bg-primary rounded-full flex items-center justify-center cursor-pointer z-20'
+            className='size-[45px] lg:size-[60px] bg-accent rounded-full flex items-center justify-center cursor-pointer z-20'
             onClick={handleClick}
             >
                {

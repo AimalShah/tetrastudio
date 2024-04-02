@@ -1,11 +1,11 @@
-
+import Routers from "./Router"
 
 function App() {
   
 
   return (
     <>
-      <h1>HELLO WORLD</h1>
+      <Routers />
     </>
   )
 }

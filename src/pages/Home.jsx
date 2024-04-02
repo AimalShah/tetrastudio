@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <div className="overflow-hidden mt-10 relative">
       {/* HERO SECK */}
-      <div className=" h-[80vh] container mx-auto flex items-center justify-center h-full ">
+      <div className=" h-screen container mx-auto flex items-center justify-center h-full ">
         <h1 className=" z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent">
           <span className="block lg:inline">Visual.</span>
           <span className="block lg:inline">Branding.</span>
@@ -27,7 +27,7 @@ export default function Home() {
       </div>
 
       {/* ABOUT SEC */}
-      <div className="continer mx-auto text-center flex flex-col items-center gap-20 py-20">
+      <div className="continer mx-auto text-center h-screen flex flex-col items-center gap-20 py-20">
         <h1 className="text-3xl text-gray-600">Who are we</h1>
         <p className="mt-4 text-3xl  font-semibold mx-10">
           A creative agency with solid expertise in <br/> Grapihcs & 3d design.

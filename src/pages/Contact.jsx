@@ -19,7 +19,7 @@ export default function Contact() {
           <input type="email" className="border-b border-accent focus:outline-none px-2 w-full text-xs font-semibold"  placeholder="Email" />
           </div>
           <input type="text" className="border-b border-accent focus:outline-none px-2 text-xs font-semibold" placeholder="Subject" />
-          <textarea name="" id="" cols="30" rows="10" placeholder="Body" className="border-b border-accent focus:outline-none text-xs font-semibold"></textarea>
+          <textarea name="" id="" cols="30" rows="10" placeholder="Body" className="border-b px-2 border-accent focus:outline-none text-xs font-semibold"></textarea>
           <button className="bg-accent text-white py-2 rounded-full">Send</button>
           </div>
           </div>

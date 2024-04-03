@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import SingleProject from "./pages/SingleProject";
+import Footer from "./components/Footer";
 
 function Routers() {
   return (
@@ -20,6 +21,7 @@ function Routers() {
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/projects/:id" element={<SingleProject />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

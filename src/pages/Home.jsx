@@ -1,7 +1,6 @@
-import Socials from "../components/Socials";
 import AbstractImg from "../assets/abstract.gif"
 import Spline from '@splinetool/react-spline';
-import { motion, stagger } from "framer-motion";
+import { motion} from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt, faPalette, faVectorSquare, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -68,6 +67,7 @@ export default function Home() {
 
       {/* ABOUT SEC */}
      <About />
+
     <Serives services={services} />
 
       {/* PROJECT SEC */}
@@ -76,8 +76,7 @@ export default function Home() {
     {/* CONTACT SEC */}
     <Contact />
 
-    {/* // FOOTER SEC */}
-    <Footer />
+  
     </div>
    
 
@@ -113,21 +112,6 @@ export const Hero = () => {
   )
 }
 
-export const Footer = () => {
-  return (
-    <div className="container mx-auto my-6">
-    <div className="text-center text-lg font-semibold ">
-      <span className="p-2 border-b-2 border-gray-600">
-      info@tetrastudio.com
-      </span>
-      <h1 className="text-xs mt-4">privacy policy</h1>
-    <div className="mt-4">
-      <Socials/>
-    </div>
-    </div>
-  </div>
-  )
-}
 
 export const About = () => {
   return (

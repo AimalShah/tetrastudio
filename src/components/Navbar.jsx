@@ -3,15 +3,16 @@ import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
-import { motion } from 'framer-motion'
+import { motion , AnimatePresence} from 'framer-motion'
 import { Link} from 'react-router-dom'
 import Socials from './Socials'
 
 export function MobileNavMenu ({navLinks , handleClick}) {
 
 return (
+  <AnimatePresence>
   <motion.div
-  className='lg:hidden w-screen h-[90vh] flex flex-col gap-10 fixed bg-white top-18 left-0 z-10 pt-2  '
+  className='lg:hidden w-screen h-[90vh] flex flex-col gap-10 fixed bg-white top-18 left-0 z-50 pt-2 '
   initial={{ clipPath : 'circle(0.4% at 100% 0)'}}
   animate={{clipPath : ' circle(140.7% at 99% 0)'}}
   transition={{duration : 0.4}}
@@ -39,17 +40,21 @@ return (
 
 
   </motion.div>
+  </AnimatePresence>
 )
 
 }
 
 export function DesktopNavMenu ({navLinks , handleClick}) {
   return (
+   <AnimatePresence>
+
   <motion.div
   className='hidden lg:flex w-screen h-[90vh] gap-40 fixed bg-white top-30 left-0 z-10 pt-20 justify-center shadow-md'
   initial={{  clipPath : 'circle(0.4% at 100% 46%)'}}
   animate={{  clipPath : 'circle(70.7% at 50% 50%)'}}
   transition={{duration : 0.4}}
+
   >
     <div className='flex flex-col justify-start '>
       <h1 className='text-xs'>Get in touch</h1>
@@ -78,6 +83,8 @@ export function DesktopNavMenu ({navLinks , handleClick}) {
     }
     </div>
   </motion.div> 
+  </AnimatePresence> 
+
   )
 }
 

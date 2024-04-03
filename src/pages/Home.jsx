@@ -1,4 +1,14 @@
 import Socials from "../components/Socials";
+import AbstractImg from "../assets/abstract.gif"
+import Spline from '@splinetool/react-spline';
+import { motion } from "framer-motion";
+
+export  function Cube() {
+  return (
+    <Spline scene="https://prod.spline.design/eFkinuFRMxlnfh0w/scene.splinecode" />
+  );
+}
+
 
 export default function Home() {
   const productsData = [
@@ -17,14 +27,32 @@ export default function Home() {
   ]
   return (
     <div className="overflow-hidden mt-10 relative">
-      {/* HERO SECK */}
-      <div className=" h-screen container mx-auto flex items-center justify-center h-full ">
-        <h1 className=" z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent">
-          <span className="block lg:inline">Visual.</span>
-          <span className="block lg:inline">Branding.</span>
-          <span className="block lg:inline">Digital.</span>
-        </h1>
-      </div>
+      {/* HERO SEC */}
+      <motion.div 
+      initial={{y: 40 , opacity : 0}}
+      animate={{y : 0 , opacity : 1}}
+      transition={{duration : 0.8}}
+      className="h-3/4 py-20 lg:py-48 container mx-auto relative flex flex-col items-center justify-center h-full bg-white">
+
+        <div className="absolute top-40 w-screen h-screen">
+        
+        </div>
+
+        {/* MObile */}
+        <img src={AbstractImg} alt="cube" className="size-100 lg:hidden" />
+        <motion.h1 
+        className=" z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28 mb-4">
+          <motion.span className="block lg:inline">Visual.</motion.span>
+          <motion.span className="block lg:inline">Branding.</motion.span>
+          <motion.span className="block lg:inline">Digital.</motion.span>
+        </motion.h1>
+        <button className=" lg:hidden bg-accent text-white p-4 w-1/2 mt-4 rounded-full">
+          Get Quote
+        </button>
+        <button className=" lg:hidden text-lg mt-4 border-b border-accent">
+          See Projects
+        </button>
+      </motion.div>
 
       {/* ABOUT SEC */}
       <div className="continer mx-auto text-center h-screen flex flex-col items-center gap-20 py-20">

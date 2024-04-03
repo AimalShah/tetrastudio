@@ -56,7 +56,7 @@ export default function Services() {
         }}}
         className='flex flex-col-reverse lg:flex-row lg:gap-40  gap-20 w-3/4 justify-center py-10  p-2 my-8'>
             <div className='flex flex-col justify-center items-start'>
-                <h1 className='text-3xl font-semibold p-3 bg-[#F5F5F7] rounded-full border'>Logo Design</h1>
+                <h1 className='lg:text-3xl text-2xl font-semibold p-3 bg-[#F5F5F7] rounded-full border'>Logo Design</h1>
                 <p className='mt-8 w-full'>Craft a unique and memorable visual identity for your brand with custom logo designs tailored to your business.</p>
                 <button
                 className='mt-8 p-2 border border-accent hover:bg-accent hover:text-white rounded-full'
@@ -78,7 +78,7 @@ export default function Services() {
                 <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
             </div>
             <div className='flex flex-col justify-center items-start'>
-                <h1 className='text-3xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>Illustration</h1>
+                <h1 className='lg:text-3xl text-2xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>Illustration</h1>
                 <p className='mt-8 w-full'>Create captivating illustrations that communicate ideas, stories, or concepts visually, adding personality to your projects.</p>
                 <button
                 className='mt-8 p-2 border border-accent hover:bg-accent hover:text-white rounded-full'
@@ -95,7 +95,7 @@ export default function Services() {
          }}}
         className='flex flex-col-reverse lg:flex-row lg:gap-40  gap-20 w-3/4 justify-center py-10  p-2 my-8'>
             <div className='flex flex-col justify-center items-start'>
-                <h1 className='text-3xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>Vector Graphics</h1>
+                <h1 className='lg:text-3xl font-semibold bg-[#F5F5F7] rounded-full border p-3 text-2xl'>Vector Graphics</h1>
                 <p className='mt-8 w-full'>Produce scalable vector graphics (SVG) that can be resized without losing quality, perfect for logos, icons, and more.</p>
                 <button
                 className='mt-8 p-2 border border-accent hover:bg-accent hover:text-white rounded-full'
@@ -117,7 +117,7 @@ export default function Services() {
                 <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
             </div>
             <div className='flex flex-col justify-center items-start'>
-                <h1 className='text-3xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>Print Design</h1>
+                <h1 className='lg:text-3xl text-2xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>Print Design</h1>
                 <p className='mt-8 w-full'>Design visually appealing print materials such as flyers, brochures, posters, and business cards to leave a lasting impression.</p>
                 <button
                 className='mt-8 p-2 border border-accent hover:bg-accent hover:text-white rounded-full'

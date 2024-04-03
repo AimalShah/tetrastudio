@@ -67,11 +67,13 @@ export default function Home() {
       {/* ABOUT SEC */}
      <About />
     <Serives services={services} />
+
       {/* PROJECT SEC */}
       <Projects productsData={productsData} />
     
     {/* CONTACT SEC */}
     <Contact />
+
     {/* // FOOTER SEC */}
     <Footer />
     </div>
@@ -96,11 +98,15 @@ export const Hero = () => {
         <motion.span className="block lg:inline">Digital.</motion.span>
       </motion.h1>
       <button className=" lg:hidden bg-accent text-white p-4 w-1/2 mt-4 rounded-full">
+      <Link to='/contact' className="">
         Get Quote
+      </Link>
       </button>
+      <Link to='/projects'>
       <button className=" lg:hidden text-lg mt-4 border-b border-accent">
         See Projects
       </button>
+      </Link>
     </motion.div>
   )
 }

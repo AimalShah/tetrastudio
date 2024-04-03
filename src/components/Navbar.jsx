@@ -118,7 +118,11 @@ function Navbar() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <div className="overflow-hidden sticky top-0 bg-white z-20 p-4">
+    <motion.div 
+    initial={{y:20 , opacity : 0}}
+    animate={{y:0 , opacity : 1}}
+    transition={{duration : 0.8}}
+    className="overflow-hidden sticky top-0 bg-white z-20 p-4">
       <div className="container mx-auto px-2 flex justify-between items-center">
         <Link to='/'>
         <div className="text-4xl font-bold">TETRA</div>
@@ -142,7 +146,7 @@ function Navbar() {
           )}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

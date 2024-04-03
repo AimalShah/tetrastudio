@@ -1,7 +1,7 @@
 import Socials from "../components/Socials";
 import AbstractImg from "../assets/abstract.gif"
 import Spline from '@splinetool/react-spline';
-import { motion } from "framer-motion";
+import { motion, stagger } from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt, faPalette, faVectorSquare, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
@@ -14,6 +14,8 @@ export  function Cube() {
 
 
 export default function Home() {
+
+
   const productsData = [
     {
       image : 'https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg',
@@ -69,7 +71,7 @@ export default function Home() {
     <Serives services={services} />
 
       {/* PROJECT SEC */}
-      <Projects productsData={productsData} />
+      <Projects productsData={productsData}  />
     
     {/* CONTACT SEC */}
     <Contact />
@@ -87,8 +89,8 @@ export const Hero = () => {
     <motion.div 
     initial={{y: 40 , opacity : 0}}
     animate={{y : 0 , opacity : 1}}
-    transition={{duration : 0.8}}
-    className="h-3/4 pb-20 pt-6 lg:py-48 container mx-auto relative flex flex-col items-center justify-center bg-white">
+    transition={{duration : 1 , delay: 0.5}}
+    className="h-Screen pb-20 pt-6 lg:py-48 container mx-auto relative flex flex-col items-center justify-center bg-white">
       <img src={AbstractImg} alt="cube" className="absolute hidden lg:block"/>
       <img src={AbstractImg} alt="cube" className="w-[400px] h-[200px] lg:hidden mr-2" />
       <motion.h1 
@@ -129,7 +131,12 @@ export const Footer = () => {
 
 export const About = () => {
   return (
-    <motion.div 
+    <motion.div
+    initial={{translateY : 40 , scale : 0.8}}
+    whileInView={{translateY :0 , scale : 1 , transition : {
+      duration : 1,
+      delay : 0.01
+    }}}
     className="continer mx-auto text-center h-3/4 flex flex-col items-center gap-10 py-20">
       <h1 className="text-3xl text-gray-600">Who are we</h1>
       <p className="mt-4 lg:text-3xl text-2xl font-semibold mx-10">
@@ -144,14 +151,24 @@ export const About = () => {
   )
 }
 
-export const Projects = ({productsData}) => {
+export const Projects = ({productsData , staggerItems}) => {
+  
+
+
   return (
-    <div className="container mx-auto px-4 py-10">
+    <div 
+    className="container mx-auto px-4 py-10">
     <h1 className="text-center text-4xl font-semibold">Top Projects</h1>
     <div className="flex gap-20 justify-center flex-wrap">
     {
       productsData.map((item) => (
-        <div key={item.name} className="size-80 bg-slate-900 mt-6 flex flex-col p-2 rounded-lg">
+        <motion.div 
+        initial={{translateX : -100 , opacity : 0}}
+        whileInView={{translateX :0 , opacity : 1 ,  transition : {
+          duration : 1,
+          delay : 0.2
+        }}}
+        key={item.name} className="size-80 bg-slate-900 mt-6 flex flex-col p-2 rounded-lg">
             <img src={item.image} alt="" className="w-full rounded-lg"/>
             <div>
              <h1 className="text-white font-semibold mt-4">{item.name}</h1>
@@ -161,7 +178,7 @@ export const Projects = ({productsData}) => {
              </button>
              </Link>
             </div>
-          </div>
+          </motion.div>
       ))
     }
   </div>
@@ -174,12 +191,12 @@ export const Contact = () => {
     <div>
     <h1 className="text-4xl font-semibold text-center mb-6 mt-10">Contact</h1>
     <div className="flex justify-center p-4">
-      <Link to='/contact'>
       <button className="hover:bg-accent hover:text-white border-2 border-accent px-8 py-4 rounded-full lg:size-80 w-3/4">
+      <Link to='/contact'>
         <span className="hidden lg:block text-sm"> click to</span>
         Get In Touch
-      </button>
       </Link>
+      </button>
     </div>
   </div>
   )
@@ -187,12 +204,18 @@ export const Contact = () => {
 
 export const Serives = ({services}) => {
  return (
-  <div className="container mx-auto px-4 py-10">
+  <div 
+  className="container mx-auto px-4 py-10">
     <h1 className="text-center text-4xl font-semibold">What do we Offer</h1>
     <div className="flex gap-20 justify-center flex-wrap mt-10 py-10">
     {
       services.map((item) => (
-        <div
+        <motion.div
+        initial={{translateX : -100  , opacity : 0}}
+        whileInView={{translateX :0 , opacity : 1 , transition : {
+          duration : 1,
+          delay : 0.2,
+        }}}
         key={item.name}
         className="size-80 flex flex-col items-center justify-between bg-slate-900 text-white p-2 rounded-lg"
         >
@@ -204,7 +227,7 @@ export const Serives = ({services}) => {
               Learn More
           </button>
           </Link>
-        </div>
+        </motion.div>
       ))
     }
   </div>

@@ -168,12 +168,12 @@ export const Projects = ({productsData , staggerItems}) => {
           duration : 1,
           delay : 0.2
         }}}
-        key={item.name} className="size-80 bg-slate-900 mt-6 flex flex-col p-2 rounded-lg">
+        key={item.name} className="size-80 bg-[#F5F5F7] mt-6 flex flex-col p-2 rounded-lg border ">
             <img src={item.image} alt="" className="w-full rounded-lg"/>
             <div>
-             <h1 className="text-white font-semibold mt-4">{item.name}</h1>
+             <h1 className="font-semibold mt-4  w-full text-accent">{item.name}</h1>
              <Link to='/projects/1231'>
-             <button className="bg-[#3169BE] w-full h-10 rounded-lg mt-2 text-white font-semibold">
+             <button className="hover:bg-accent px-4 h-10 rounded-full mt-2 hover:text-white font-semibold border border-accent/20">
               Learn More
              </button>
              </Link>
@@ -213,17 +213,17 @@ export const Serives = ({services}) => {
         <motion.div
         initial={{translateX : -100  , opacity : 0}}
         whileInView={{translateX :0 , opacity : 1 , transition : {
-          duration : 1,
+          duration : 0.5,
           delay : 0.2,
         }}}
         key={item.name}
-        className="size-80 flex flex-col items-center justify-between bg-slate-900 text-white p-2 rounded-lg"
+        className="size-80 flex flex-col items-center justify-between bg-[#F5F5F7] text-white p-2 rounded-lg border border-accent/20"
         >
-          <span className="bg-[#3169BE] w-fit p-4 rounded-lg">{item.icon}</span>
-          <h2 className="my-2 text-xl font-bold">{item.name}</h2>
-          <p className="text-sm text-center">{item.description}</p>
+          <span className=" w-fit p-4 rounded-lg bg-accent">{item.icon}</span>
+          <h2 className="my-2 text-xl font-bold text-accent">{item.name}</h2>
+          <p className="text-sm text-center text-accent">{item.description}</p>
           <Link to='/services' className="w-full">
-          <button className="bg-[#3169BE] w-full h-10 rounded-lg mt-2 text-white font-semibold">
+          <button className="bg-accent w-full h-10 rounded-full mt-2 text-white font-semibold">
               Learn More
           </button>
           </Link>

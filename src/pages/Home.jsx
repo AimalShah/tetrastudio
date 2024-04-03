@@ -32,16 +32,10 @@ export default function Home() {
       initial={{y: 40 , opacity : 0}}
       animate={{y : 0 , opacity : 1}}
       transition={{duration : 0.8}}
-      className="h-3/4 py-20 lg:py-48 container mx-auto relative flex flex-col items-center justify-center h-full bg-white">
-
-        <div className="absolute top-40 w-screen h-screen">
-        
-        </div>
-
-        {/* MObile */}
-        <img src={AbstractImg} alt="cube" className="size-100 lg:hidden" />
+      className="h-3/4 pb-20 pt-6 lg:py-48 container mx-auto relative flex flex-col items-center justify-center bg-white">
+        <img src={AbstractImg} alt="cube" className="w-[400px] h-[200px] lg:hidden mr-2" />
         <motion.h1 
-        className=" z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28 mb-4">
+        className=" z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28">
           <motion.span className="block lg:inline">Visual.</motion.span>
           <motion.span className="block lg:inline">Branding.</motion.span>
           <motion.span className="block lg:inline">Digital.</motion.span>

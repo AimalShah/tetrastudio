@@ -14,7 +14,7 @@
   
   .blob {
     background-color: white;
-    height: 70%;
+    height: 68%;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
@@ -30,12 +30,12 @@
     height: 100%;
     width: 100%;
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     backdrop-filter: blur(12vmax);
   }
 
  @media only screen  and (max-width: 700px) {
   .blob{
-    height: 50%;
+    height: 45%;
   }
  } 

@@ -1,16 +1,36 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faSquareInstagram } from '@fortawesome/free-brands-svg-icons'
-import { faSquareFacebook } from '@fortawesome/free-brands-svg-icons'
-import { faSquareTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 
-function Socials() {
+function Socials({size}) {
   return (
     <div className='flex items-center justify-center gap-6'>
-      <FontAwesomeIcon icon={faSquareInstagram}  className='size-8 text-gray-600  hover:text-accent'/>
-      <FontAwesomeIcon icon={faSquareFacebook}  className='size-8 text-gray-600 hover:text-accent' />
-      <FontAwesomeIcon icon={faSquareTwitter}  className='size-8 text-gray-600  hover:text-accent'/>
-      <FontAwesomeIcon icon={faTiktok}  className='size-8 text-gray-600 hover:text-accent' />
+      <FontAwesomeIcon icon={faInstagram}  
+      style={{
+        height : `${size}px` ,
+        width : `${size}px`
+      }}
+      className='s text-accent  hover:text-primary'/>
+      <FontAwesomeIcon icon={faFacebook}  
+      style={{
+        height : `${size}px` ,
+        width : `${size}px`
+      }}
+      className=' text-accent hover:text-primary' />
+      <FontAwesomeIcon icon={faTwitter}  
+      style={{
+        height : `${size}px` ,
+        width : `${size}px`
+      }}
+      className='text-accent  hover:text-primary'/>
+      <FontAwesomeIcon icon={faTiktok}  
+      style={{
+        height : `${size}px` ,
+        width : `${size}px`
+      }}
+      className='text-accent hover:text-primary' />
     </div>
   )
 }

@@ -36,7 +36,7 @@ export function MobileNavMenu({ navLinks, handleClick }) {
           </Link>
         </div>
         <div className="mt-2">
-          <Socials />
+          <Socials size={40}/>
         </div>
       </motion.div>
     </AnimatePresence>
@@ -47,7 +47,7 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
   return (
     <AnimatePresence>
       <motion.div
-        className="hidden lg:flex w-screen h-[90vh] gap-40 fixed bg-white top-30 left-0 z-10 pt-20 justify-center shadow-md"
+        className="hidden lg:flex w-screen h-[100vh] gap-40 fixed bg-white top-30 left-0 z-10 pt-20 justify-center shadow-md"
         initial={{ clipPath: "circle(0.4% at 100% 46%)" }}
         animate={{ clipPath: "circle(70.7% at 50% 50%)" }}
         transition={{ duration: 0.4 }}
@@ -117,13 +117,17 @@ function Navbar() {
     setIsActive(!isActive);
   };
   const [isActive, setIsActive] = useState(false);
-
+  const bg = isActive ? "white" : "transparent"
   return (
     <motion.div 
     initial={{y:20 , opacity : 0}}
     animate={{y:0 , opacity : 1}}
     transition={{duration : 0.8}}
-    className="overflow-hidden fixed w-full top-0 bg-transparent z-20 p-4">
+    style={{
+      background : bg,
+    }}
+    className="overflow-hidden fixed w-full top-0  z-50 p-4">
+
       <div className="container mx-auto px-2 flex justify-between items-center">
         <Link to='/'>
         <div className="text-4xl font-bold">

@@ -28,7 +28,7 @@ export default function Contact() {
 
     setLoading(true);
 
-    const serviceID = "service_0nhwiau";
+    const serviceID = "service_gdliph7";
     const templateId = "template_eqsf8ah";
     const publicKey = "zWXjZk0OgDaziKelI";
 

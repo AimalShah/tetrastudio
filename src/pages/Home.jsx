@@ -4,7 +4,7 @@ import { motion} from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPencilAlt, faPalette, faVectorSquare, faPrint } from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
-
+import "./Blob.css";
 export  function Cube() {
   return (
     <Spline scene="https://prod.spline.design/eFkinuFRMxlnfh0w/scene.splinecode" />
@@ -61,7 +61,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="overflow-hidden mt-10 relative">
+    <div className="overflow-hidden  relative">
       {/* HERO SEC */}
       <Hero />
 
@@ -89,9 +89,14 @@ export const Hero = () => {
     initial={{y: 40 , opacity : 0}}
     animate={{y : 0 , opacity : 1}}
     transition={{duration : 1 , delay: 0.5}}
-    className="h-Screen pb-20 pt-6 lg:py-48 container mx-auto relative flex flex-col items-center justify-center bg-white">
-      <img src={AbstractImg} alt="cube" className="absolute hidden lg:block"/>
-      <img src={AbstractImg} alt="cube" className="w-[400px] h-[200px] lg:hidden mr-2" />
+    className="h-[100vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center ">
+      <div className="blob"> 
+      </div>
+      <div className="blur">
+
+      </div>
+      {/* <img src={AbstractImg} alt="cube" className="absolute hidden lg:block"/> */}
+      <img src={AbstractImg} alt="cube" className="w-[400px] h-[200px] lg:hidden mr-2 opactiy-0" />
       <motion.h1 
       className=" z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28">
         <motion.span className="block lg:inline">Visual.</motion.span>

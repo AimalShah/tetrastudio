@@ -5,6 +5,7 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
+import LogoImg from "../assets/Logo.svg"
 
 export function MobileNavMenu({ navLinks, handleClick }) {
   return (
@@ -122,10 +123,12 @@ function Navbar() {
     initial={{y:20 , opacity : 0}}
     animate={{y:0 , opacity : 1}}
     transition={{duration : 0.8}}
-    className="overflow-hidden sticky top-0 bg-white z-20 p-4">
+    className="overflow-hidden fixed w-full top-0 bg-transparent z-20 p-4">
       <div className="container mx-auto px-2 flex justify-between items-center">
         <Link to='/'>
-        <div className="text-4xl font-bold">TETRA</div>
+        <div className="text-4xl font-bold">
+          <img src={LogoImg} alt="logo" className="size-20" />
+        </div>
         </Link>
         <div className="z-20">
           <button

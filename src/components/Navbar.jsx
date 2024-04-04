@@ -53,7 +53,7 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
       >
         <div className="flex flex-col justify-start ">
           <h1 className="text-xs">Get in touch</h1>
-          <p className="text-md mt-2">info@tetrastudio.com</p>
+          <p className="text-md mt-2">info@tetrastudio.net</p>
 
           <div className="mt-12">
             <h1 className="text-sm">Socials</h1>

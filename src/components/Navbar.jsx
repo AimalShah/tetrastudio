@@ -126,9 +126,9 @@ function Navbar() {
     style={{
       background : bg,
     }}
-    className="overflow-hidden fixed w-full top-0  z-50 p-4">
+    className="fixed w-full top-0 z-50 p-4">
 
-      <div className="container mx-auto px-2 flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center">
         <Link to='/'>
         <div className="text-4xl font-bold">
           <img src={LogoImg} alt="logo" className="size-20" />

@@ -9,6 +9,8 @@ import ServiceCard from "../components/ServiceCard";
 import ProjectCard from "../components/ProjectCard";
 import { fadeInAnimationVariants } from "./anim";
 import { cardAnimationVaritent } from "./anim";
+import Carousel from "../components/Carousel";
+
 
 
 
@@ -169,13 +171,10 @@ export const Projects = ({productsData}) => {
     <div 
     className="lg:screen container mx-auto px-4 py-10 ">
     <h1 className="text-center text-4xl font-semibold mb-10">Top Projects</h1>
-    <div className="flex gap-20 justify-center flex-wrap">
-    {
-      productsData.map((item , index) => (
-        <ProjectCard cardAnimationVaritent={cardAnimationVaritent} index={index} item={item} key={index}/>
-      ))
-    }
-  </div>
+    {/* <div className="flex gap-20 justify-center flex-wrap">
+   
+  </div> */}
+    <Carousel arr={productsData} />
   </div>
   )
 }
@@ -185,12 +184,12 @@ export const Serives = ({services}) => {
   <div 
   className="container mx-auto px-4 py-10">
     <h1 className="text-center text-4xl font-semibold">What do we Offer</h1>
-    <div className="flex gap-20 justify-center flex-wrap mt-10 py-10">
-    {
-      services.map((item , index) => (
-       <ServiceCard cardAnimationVaritent={cardAnimationVaritent} index={index} item={item}  key={index}/>
-      ))
-    }
+    <div className="flex gap-20 justify-center flex-wrap mt-10 py-10"> 
+      {
+        services.map((item ,index) => (
+          <ServiceCard cardAnimationVaritent={cardAnimationVaritent} index={index} item={item} key={index} />
+        ))
+      }
   </div>
   </div>
  )

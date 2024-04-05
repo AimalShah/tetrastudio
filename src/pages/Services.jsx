@@ -10,7 +10,7 @@ export default function Services() {
 
 
   return (
-    <div>
+    <div className="">
 
       <motion.div 
         initial={{y: 40 , opacity : 0}}
@@ -104,7 +104,7 @@ export default function Services() {
              duration : 0.5 ,
              delay : 0.02
          }}}
-        className='flex flex-col lg:flex-row lg:gap-40 gap-20 w-3/4 justify-center  m my-8 py-10'>
+        className='flex flex-col lg:flex-row lg:gap-40 gap-20 w-3/4 justify-center  my-8 py-10'>
             <div className='w-full'>
                 <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
             </div>

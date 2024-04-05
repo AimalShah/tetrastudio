@@ -8,7 +8,7 @@ export default function ProjectCard({ cardAnimationVaritent, index, item }) {
       initial="initial"
       whileInView="animate"
       custom={index}
-      className="size-80 bg-[#F5F5F7] mt-6 flex flex-col p-2 rounded-lg border"
+      className="h-full w-full bg-[#F5F5F7] flex flex-col p-2 rounded-lg border"
     >
       <img src={item.image} alt="" className="w-full rounded-lg" />
       <div>

@@ -14,7 +14,7 @@
   
   .blob {
     background-color: white;
-    height: 68%;
+    height: 80%;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
@@ -24,6 +24,7 @@
     background: linear-gradient(to right, rgb(179, 13, 90), rgb(64, 20, 153));
     animation: rotate 20s infinite;
     opacity: 0.8;
+    filter: blur(12vmax);
   }
   
   .blur {

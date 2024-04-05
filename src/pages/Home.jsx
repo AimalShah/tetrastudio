@@ -92,9 +92,9 @@ export const Hero = () => {
     className="h-[100vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center ">
       <div className="blob z-0"> 
       </div>
-      <div className="blur z-10">
+      {/* <div className="blur z-10">
 
-      </div>
+      </div> */}
       {/* <img src={AbstractImg} alt="cube" className="absolute hidden lg:block"/> */}
       {/* <img src={AbstractImg} alt="cube" className="w-[400px] h-[200px] lg:hidden mr-2 opactiy-0" /> */}
       <motion.h1 
@@ -135,7 +135,7 @@ export const About = () => {
   return (
     <motion.div
     className=" h-screen continer mx-auto text-center h-3/4 flex flex-col items-center justify-center gap-20 py-20">
-      <h1 className="text-3xl text-gray-600">Who are we</h1>
+      <h1 className="text-3xl text-gray-600">Who we are</h1>
       <p className="mt-4 lg:text-3xl text-2xl font-semibold mx-10 flex justify-center flex-wrap gap-2 text-center">
 
        {

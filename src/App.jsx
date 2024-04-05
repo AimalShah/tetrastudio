@@ -1,16 +1,15 @@
-import { useRef } from "react"
 import Routers from "./Router"
-
+import { ReactLenis} from '@studio-freight/react-lenis'
 
 
 function App() {
-  const containerRef = useRef(null)
+
  
 
   return (
-    <div data-scroll-container ref={containerRef} className="">
+    <ReactLenis root options={{ lerp: 0.5, duration: 4, smoothTouch: true }}>
       <Routers />
-    </div>
+    </ReactLenis>
   )
 }
 

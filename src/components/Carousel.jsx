@@ -12,9 +12,9 @@ export default function Carousel({arr}) {
     
     useEffect(() => {
         setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth)
-        animate(xValue , [0 , -width*5] , {
+        animate(xValue , [0 , -width] , {
             ease: 'linear',
-            duration: 20,
+            duration: 25,
             repeat: Infinity,
             repeatType : "loop",
             repeatDelay: 0,

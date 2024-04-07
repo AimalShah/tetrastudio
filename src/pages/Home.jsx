@@ -1,7 +1,7 @@
 // import AbstractImg from "../assets/abstract.gif"
 import { motion} from "framer-motion";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPaintBrush, faCube, faVideo, faBrain, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faPaintBrush, faCube, faVideo, faBrain, faCode , faLanguage, faFileAudio, faDatabase, faPuzzlePiece} from '@fortawesome/free-solid-svg-icons';
 import { Link } from "react-router-dom";
 import "./Blob.css";
 import Contact from "../components/Contact";
@@ -63,6 +63,25 @@ export default function Home() {
       title: 'Web Development',
       icon: <FontAwesomeIcon icon={faCode} />,
       description: 'Web development encompasses building and maintaining websites and web applications. It involves various technologies such as HTML, CSS, JavaScript, and frameworks like React or Angular.'
+    },  {
+      title: "Translations",
+      description: "Efficient and accurate translation services to bridge language barriers and reach global audiences.",
+      icon: <FontAwesomeIcon icon={faLanguage} /> // Entire Font Awesome icon element
+    },
+    {
+      title: "Transcription",
+      description: "Transform audio and video content into text format with precision and speed.",
+      icon: <FontAwesomeIcon icon={faFileAudio} /> // Entire Font Awesome icon element
+    },
+    {
+      title: "Data Collection",
+      description: "Gather, organize, and curate data from various sources to fuel insights and decision-making.",
+      icon: <FontAwesomeIcon icon={faDatabase} /> // Entire Font Awesome icon element
+    },
+    {
+      title: "Data Annotation",
+      description: "Enhance machine learning algorithms by labeling and annotating data with accuracy and consistency.",
+      icon: <FontAwesomeIcon icon={faPuzzlePiece} /> // Entire Font Awesome icon element
     }
   ];
   return (

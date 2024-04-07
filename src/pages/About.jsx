@@ -25,6 +25,7 @@ export default function About() {
         <motion.div 
         initial={{y : 100}}
         whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.1}}}
+        viewport={{once : true}}
         className="px-4">
         <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desing" 
         className="lg:h-[550px] lg:w-full object-cover mb-40 rounded-lg shadow-lg shadow-indigo-500/50"
@@ -33,10 +34,12 @@ export default function About() {
         <motion.h1 
          initial={{y : 100}}
          whileInView={{y : 0 , transition : {duration : 1 , delay : 0.2}}}
+         viewport={{once : true}}
         className="w-full font-semibold text-accent/50 lg:text-2xl mb-10 text-xl px-2" >Unleash Creativity with Tetra Studio</motion.h1>
         <motion.p 
        initial={{y : 100}}
        whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.3}}}
+       viewport={{once : true}}
         className="w-full lg:text-5xl font-medium text-xl lg:leading-[70px] px-2 lg:px-0">
         Embark on a voyage of boundless creativity with Tetra Studio, where imagination knows no limits. Founded in 2021, we stand as pioneers in the digital realm, offering a kaleidoscope of innovative services to bring your visions to life.
         </motion.p>
@@ -47,6 +50,7 @@ export default function About() {
        variants={paragraphAnimation}
        initial={{y : 100}}
        whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.1}}}
+       viewport={{once : true}}
        className="flex items-center ">
        <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desing" 
         className="lg:h-[550px] lg:w-[550px] w-full object-cover rounded-lg shadow-lg shadow-indigo-500/50"/>
@@ -54,6 +58,7 @@ export default function About() {
        <motion.div
      initial={{y : 100}}
      whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.2}}}
+     viewport={{once : true}}
        >
        <img src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desing" 
         className="lg:h-[550px] lg:w-[550px] w-full object-cover mb-40 rounded-lg shadow-lg shadow-indigo-500/50"/>
@@ -62,10 +67,12 @@ export default function About() {
       <motion.h1 
      initial={{y : 100}}
      whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.3}}}
+     viewport={{once : true}}
       className="w-full font-semibold text-accent/50 lg:text-2xl text-xl px-2 mb-10">Crafting Digital Masterpieces</motion.h1>
         <motion.p 
        initial={{y : 100}}
        whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.35}}}
+       viewport={{once : true}}
         className="w-full lg:text-5xl font-medium text-xl lg:leading-[70px] px-2 lg:px-0">
         Step into a world where pixels dance and ideas take shape. Our team of seasoned experts specializes in crafting digital masterpieces that captivate, inspire, and leave a lasting impression. From mesmerizing CGI works to breathtaking graphic design, we infuse every project with unparalleled creativity and finesse.
         </motion.p>
@@ -75,15 +82,18 @@ export default function About() {
       <motion.img 
       initial={{y : 100}}
       whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.1}}}
+      viewport={{once : true}}
       src="https://images.unsplash.com/photo-1509343256512-d77a5cb3791b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="desing" 
         className="h-[550px] w-full object-cover mb-40 rounded-lg shadow-lg shadow-indigo-500/50"/>
       <motion.h1 
      initial={{y : 100}}
      whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.2}}}
+     viewport={{once : true}}
       className="w-full font-semibold text-accent/50 lg:text-2xl text-xl px-2 mb-10">Your Trusted Partner in Digital Transformation</motion.h1>
         <motion.p 
        initial={{y : 100}}
        whileInView={{y : 0 , transition : {duration : 1   ,  delay : 0.3}}}
+       viewport={{once : true}}
         className="w-full lg:text-5xl font-medium text-xl lg:leading-[70px] px-2 lg:px-0" >
         In a world of constant change, trust is paramount. At Tetra Studio, we are more than just service providers – we are your partners in digital transformation. With a relentless commitment to excellence and a passion for innovation, we stand by your side, turning your dreams into reality, one pixel at a time.
         </motion.p>

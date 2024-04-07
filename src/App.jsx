@@ -1,15 +1,32 @@
+import { useEffect } from "react"
 import Routers from "./Router"
-import { ReactLenis} from '@studio-freight/react-lenis'
+import Lenis from '@studio-freight/lenis'
+
 
 
 function App() {
 
+useEffect(() => {
+    const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
+  } , [])
  
 
   return (
-    <ReactLenis root options={{ lerp: 0.5, duration: 4, smoothTouch: true }}>
+    <div>
       <Routers />
-    </ReactLenis>
+    </div>
+    
   )
 }
 

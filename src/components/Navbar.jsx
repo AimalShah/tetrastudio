@@ -2,10 +2,12 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence , useScroll , useMotionValueEvent} from "framer-motion";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
 import LogoImg from "../assets/Logo.svg"
+
+
 
 export function MobileNavMenu({ navLinks, handleClick }) {
   return (
@@ -90,6 +92,8 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
 }
 
 function Navbar() {
+
+
   const navLinks = [
     {
       Page: "Home",
@@ -116,8 +120,11 @@ function Navbar() {
   const handleClick = () => {
     setIsActive(!isActive);
   };
+
   const [isActive, setIsActive] = useState(false);
   const bg = isActive ? "white" : "transparent"
+
+
   return (
     <motion.div 
     initial={{y:20 , opacity : 0}}
@@ -126,9 +133,9 @@ function Navbar() {
     style={{
       background : bg,
     }}
-    className="fixed w-full top-0 z-50 p-4">
+    className="fixed w-full top-0 z-50 lg:p-4 px-4 backdrop-blur-md ">
 
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center p-0">
         <Link to='/'>
         <div className="text-4xl font-bold">
           <img src={LogoImg} alt="logo" className="size-20" />
@@ -136,7 +143,7 @@ function Navbar() {
         </Link>
         <div className="z-20">
           <button
-            className="size-[45px] lg:size-[60px] bg-accent rounded-full flex items-center justify-center cursor-pointer z-20"
+            className="size-[45px] lg:size-[60px] bg-accent rounded-full flex  items-center justify-center cursor-pointer z-20"
             onClick={handleClick}
           >
             {isActive ? (

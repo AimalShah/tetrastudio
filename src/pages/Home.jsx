@@ -133,7 +133,7 @@ export const Hero = () => {
 
 export const About = () => {
 
-  const arrStr = ["A" , "creative " , "agency" , " with " , "solid " , "expertise" , "in" , "Grapihcs" ,  "& 3d design"]
+  const arrStr = ["A" , "creative " , "agency" , " with " , "solid " , "expertise" , "in" , "Visuals" ,  "& Branding"]
   return (
     <motion.div
     className=" h-screen continer mx-auto text-center h-3/4 flex flex-col items-center justify-center gap-20 py-20">

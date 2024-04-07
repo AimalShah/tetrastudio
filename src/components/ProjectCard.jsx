@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 export default function ProjectCard({ cardAnimationVaritent, index, item }) {
+  const arr = [1,2,3,4,5]
   return (
     <motion.div
       variants={cardAnimationVaritent}
@@ -10,7 +11,7 @@ export default function ProjectCard({ cardAnimationVaritent, index, item }) {
       custom={index}
       className="h-full w-full bg-[#F5F5F7] flex flex-col p-2 rounded-lg border"
     >
-      <img src={item.image} alt="" className="w-full rounded-lg" />
+      <img src={item.image} alt="" className="w-full rounded-lg pointer-events-none" />
       <div>
         <h1 className="font-semibold mt-4 w-full text-accent">{item.name}</h1>
         <Link to="/projects/1231">

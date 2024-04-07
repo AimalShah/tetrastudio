@@ -1,12 +1,13 @@
 export const fadeInAnimationVariants = {
     initial : {
+      y: 100,
       opacity : 0,
-       y: 100
     } , 
     animate : (index) => ({
+      y:0 ,
       opacity : 1 ,
-        y:0 ,
       transition : {
+        duration : 0.5,
         delay : 0.04 * index ,
         type : "tween"
       }
@@ -26,3 +27,16 @@ export const fadeInAnimationVariants = {
       }
     }),
   } 
+export const  paragraphAnimation = {
+  initial : {
+    y : 100
+  } , 
+  animate : () =>  ({
+    y : 0, 
+    transition : {
+      duration : 4,
+      ease : "linear",
+      type : "tween"
+    }
+  }),
+}

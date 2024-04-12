@@ -66,7 +66,7 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
             <h2 className="text-md font-semibold mt-2 text-gray-500">
               Facebook
             </h2>
-            <h2 className="text-md font-semibold mt-2 text-gray-500">Tiktok</h2>
+            <h2 className="text-md font-semibold mt-2 text-gray-500">Youtube</h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
               twitter
             </h2>
@@ -93,6 +93,8 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
 
 function Navbar() {
 
+  const [hidden , setHidden] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   const navLinks = [
     {
@@ -104,7 +106,7 @@ function Navbar() {
       Link: "/services",
     },
     {
-      Page: "About US",
+      Page: "About Us",
       Link: "/about",
     },
     {
@@ -121,15 +123,29 @@ function Navbar() {
     setIsActive(!isActive);
   };
 
-  const [isActive, setIsActive] = useState(false);
   const bg = isActive ? "white" : "transparent"
+  const {scrollY} = useScroll()
+
+  useMotionValueEvent(scrollY , "change" , (latest) => {
+    const previous = scrollY.getPrevious()
+
+    if(latest > previous && latest > 150){
+      setHidden(true)
+    } else {
+      setHidden(false)
+    }
+
+  })
 
 
   return (
     <motion.div 
-    initial={{y:20 , opacity : 0}}
-    animate={{y:0 , opacity : 1}}
-    transition={{duration : 0.8}}
+    variants={{
+      visible : {y :0},
+      hidden:{y : "-100%"}
+    }}
+    animate = {hidden ? "hidden" : "visiblr"}
+    transition={{duration : 0.3}}
     style={{
       background : bg,
     }}

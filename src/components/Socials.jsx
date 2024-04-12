@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons'
 import { faFacebook } from '@fortawesome/free-brands-svg-icons'
 import { faTwitter } from '@fortawesome/free-brands-svg-icons'
-import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 function Socials({size}) {
   return (
@@ -25,7 +25,7 @@ function Socials({size}) {
         width : `${size}px`
       }}
       className='text-accent  hover:text-primary'/>
-      <FontAwesomeIcon icon={faTiktok}  
+      <FontAwesomeIcon icon={faYoutube}  
       style={{
         height : `${size}px` ,
         width : `${size}px`

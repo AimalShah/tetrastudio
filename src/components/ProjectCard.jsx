@@ -11,11 +11,11 @@ export default function ProjectCard({ cardAnimationVaritent, index, item }) {
       custom={index}
       className="h-full w-full bg-[#F5F5F7] flex flex-col p-2 rounded-lg border"
     >
-      <img src={item.image} alt="" className="w-full rounded-lg pointer-events-none" />
+      <img src={item.image} alt="" className="w-full rounded-lg pointer-events-none object-cover" />
       <div>
-        <h1 className="font-semibold mt-4 w-full text-accent">{item.name}</h1>
+        <h1 className="font-semibold mt-4 w-full text-accent text-sm">{item.name}</h1>
         <Link to="/projects/1231">
-          <button className="hover:bg-accent px-4 h-10 rounded-full mt-2 hover:text-white font-semibold border border-accent/20">
+          <button className="hover:bg-accent px-4 py-2 rounded-full mt-2 hover:text-white font-semibold border border-accent/20 text-xs">
             Learn More
           </button>
         </Link>

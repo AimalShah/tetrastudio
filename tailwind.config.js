@@ -11,6 +11,9 @@ export default {
         primary : "#DB1F26",
         secondary : "#2A343B",
         accent :  "#000000"
+      },
+      gridTemplateColumns : {
+        'autofit' : 'repeat(autofit , minmax(250px , 1fr))'
       }
     },
   },

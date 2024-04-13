@@ -151,7 +151,7 @@ function Navbar() {
     }}
     className="fixed w-full top-0 z-50 px-4">
 
-      <div className="flex justify-between items-center px-2">
+      <div className="flex justify-between items-center px-[5%]">
         <Link to='/'>
         <div className="text-4xl font-bold">
           <img src={LogoImg} alt="logo" className="size-20" />

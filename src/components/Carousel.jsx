@@ -6,13 +6,12 @@ import useMeasure from "react-use-measure"
 
 export default function Carousel({arr}) {
 
-    let [ref , {width}] = useMeasure()
-    const carousel = useRef()
+    let [ref , {width}] = useMeasure()  
     const xValue = useMotionValue(0)
 
     
     useEffect(() => {
-        let finalPos = -width / 2 - 8
+        let finalPos = -width 
         animate(xValue , [0 , finalPos] , {
             ease: 'linear',
             duration: 25,
@@ -29,7 +28,7 @@ export default function Carousel({arr}) {
         style={{x : xValue}}
         className="flex">
             {
-               [...arr , ...arr].map((item , index) => (
+               arr.map((item , index) => (
                     <motion.div 
                     className="min-w-80 px-4 cursor-grabbing" key={index}>
                         <ProjectCard index={index} item={item} key={index}/>

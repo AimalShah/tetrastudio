@@ -129,7 +129,7 @@ function Navbar() {
   useMotionValueEvent(scrollY , "change" , (latest) => {
     const previous = scrollY.getPrevious()
 
-    if(latest > previous && latest > 150){
+    if(latest > previous && latest > 50){
       setHidden(true)
     } else {
       setHidden(false)
@@ -145,13 +145,13 @@ function Navbar() {
       hidden:{y : "-100%"}
     }}
     animate = {hidden ? "hidden" : "visiblr"}
-    transition={{duration : 0.3}}
+    transition={{duration : 0.3}} 
     style={{
-      background : bg,
+      backgroundColor : bg
     }}
-    className="fixed w-full top-0 z-50 lg:p-4 px-4 backdrop-blur-md ">
+    className="fixed w-full top-0 z-50 px-4">
 
-      <div className="container mx-auto flex justify-between items-center p-0">
+      <div className="flex justify-between items-center px-2">
         <Link to='/'>
         <div className="text-4xl font-bold">
           <img src={LogoImg} alt="logo" className="size-20" />

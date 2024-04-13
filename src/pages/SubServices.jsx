@@ -9,6 +9,7 @@ import {
 import { cardAnimationVaritent } from "./anim";
 import ServiceCard from "../components/ServiceCard";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const services = [
     {
@@ -220,7 +221,9 @@ function SubServices() {
     </div>
     <div className="text-center mt-6">
         <button className="text-center border-accent border p-4 rounded-full hover:bg-accent hover:text-white">
+          <Link to="/projects" className="block">
             See {content[0].title} Projects
+          </Link>
         </button>
     </div>
     </div>

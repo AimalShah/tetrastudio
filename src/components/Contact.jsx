@@ -6,7 +6,7 @@ const Contact = () => {
       <h1 className="text-4xl font-semibold text-center mb-6 mt-10">Contact</h1>
       <div className="flex justify-center p-4">
         <button className="hover:bg-accent hover:text-white border-2 border-accent px-8 py-4 rounded-full lg:w-1/2 w-3/4">
-        <Link to='/contact' className="w-full h-full">
+        <Link to='/contact' className="w-full h-full block">
           Get In Touch
         </Link>
         </button>

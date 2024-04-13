@@ -148,7 +148,7 @@ export default function Home() {
 
 export const Hero = () => {
   return (
-    <motion.div className="h-[100vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center ">
+    <motion.div className="h-[100vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center lg:mt-40">
       <div className="blob z-0"></div>
       <motion.h1
         initial={{ y: 40, opacity: 0 }}

@@ -154,7 +154,7 @@ export const Hero = () => {
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28"
+        className="z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-white lg:mb-28"
       >
         <motion.span className="block lg:inline">Visual.</motion.span>
         <motion.span className="block lg:inline">Branding.</motion.span>

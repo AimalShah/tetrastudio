@@ -60,12 +60,12 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
           <div className="mt-12">
             <h1 className="text-sm">Socials</h1>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="" className="block">
+              <a href="https://www.instagram.com/tetrastudiopk/" className="block">
               Instagram
               </a>
             </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="" className="block">
+              <a href="https://www.facebook.com/tetrastudiopk" className="block">
               Facebook
               </a>
             </h2>
@@ -76,7 +76,7 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
               </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
               <a href="" className="block">
-              twitter
+              LinkedIn
               </a>
             </h2>
           </div>

@@ -8,7 +8,7 @@ export default function ServiceCard({cardAnimationVaritent , index , item}) {
     whileInView="animate"
     custom={index}
     viewport={{ once: true }}
-    className="size-80 flex flex-col items-center justify-between bg-white p-2 rounded-lg "
+    className="size-80 flex flex-col items-center justify-between bg-white p-2 rounded-lg shadow-md "
     >
       <span className=" w-fit p-4 rounded-lg border border-accent text-accent">{item.icon}</span>
       <h2 className="my-2 text-xl font-bold text-accent text-center">{item.title}</h2>

@@ -23,7 +23,7 @@ function ScrollToTop() {
 function Routers() {
 
   return (
-    <div className="">
+    <div className="overflow-x-hidden">
       <Router>
       <ScrollToTop />
         <Navbar />

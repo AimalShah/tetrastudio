@@ -50,7 +50,7 @@ export default function Services() {
                 </button>
             </div>
             <div className='w-full'>
-                <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
+                <img src="https://i.pinimg.com/736x/7f/32/0a/7f320aad80ace1060a8f59165449c438.jpg" alt=""  className='w-full rounded-lg'/>
             </div>
         </motion.div>
 
@@ -62,7 +62,7 @@ export default function Services() {
          }}}
         className='flex flex-col lg:flex-row lg:gap-40 gap-20 w-3/4 justify-center  m my-8 py-10'>
             <div className='w-full'>
-                <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
+                <img src="https://3dstudio.co/wp-content/uploads/2022/01/what-is-3d-modeling.jpg" alt=""  className='w-full rounded-lg'/>
             </div>
             <div className='flex flex-col justify-center items-start'>
                 <h1 className='lg:text-3xl text-2xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>3D Modeling/Animation</h1>
@@ -93,7 +93,7 @@ export default function Services() {
                 </Link></button>
             </div>
             <div className='w-full'>
-                <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
+                <img src="https://media.wired.com/photos/623be23576c011e23c84e9e3/1:1/w_1800,h_1800,c_limit/Windows-11-Video-Editor-Clipchamp-Gear.jpg" alt=""  className='w-full rounded-lg'/>
             </div>
         </motion.div>
 
@@ -105,7 +105,7 @@ export default function Services() {
          }}}
         className='flex flex-col lg:flex-row lg:gap-40 gap-20 w-3/4 justify-center  my-8 py-10'>
             <div className='w-full'>
-                <img src="https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg" alt=""  className='w-full rounded-lg'/>
+                <img src="https://www.eweek.com/wp-content/uploads/2023/06/ew-what-is-ai-as-a-service.png" alt=""  className='w-full rounded-lg'/>
             </div>
             <div className='flex flex-col justify-center items-start'>
                 <h1 className='lg:text-3xl text-2xl font-semibold bg-[#F5F5F7] rounded-full border p-3'>Artificial Intelligence</h1>

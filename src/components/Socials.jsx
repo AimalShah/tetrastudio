@@ -25,7 +25,7 @@ function Socials({size}) {
       className=' text-accent hover:text-primary' />
       </a>
 
-      <a href="" className="block">
+      <a href="https://www.linkedin.com/company/tetrastudiopk/" className="block">
       <FontAwesomeIcon icon={faLinkedin}  
       style={{
         height : `${size}px` ,
@@ -34,7 +34,7 @@ function Socials({size}) {
       className='text-accent  hover:text-primary'/>
       </a>
 
-      <a href="" className="block">
+      <a href="https://www.youtube.com/@tetrastudiopk" className="block">
       <FontAwesomeIcon icon={faYoutube}  
       style={{
         height : `${size}px` ,

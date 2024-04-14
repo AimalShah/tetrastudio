@@ -70,12 +70,12 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
               </a>
             </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="" className="block">
+              <a href="https://www.youtube.com/@tetrastudiopk" className="block">
               Youtube
               </a>
               </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="" className="block">
+              <a href="https://www.linkedin.com/company/tetrastudiopk/" className="block">
               LinkedIn
               </a>
             </h2>

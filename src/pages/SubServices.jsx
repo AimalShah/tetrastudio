@@ -76,9 +76,9 @@ const services = [
         id : 3 , 
         SubServices : [
             {
-              title: 'Corporate Video Editing',
+              title: 'Commercial Ads Video Editing',
               icon: <FontAwesomeIcon icon={faFilm} />,
-              description: 'Edit professional videos for corporate presentations, training, or promotional purposes.'
+              description: "Transform raw footage into compelling, polished content for today's competitive market."
             },
             {
               title: 'Wedding Video Editing',
@@ -215,7 +215,7 @@ function SubServices() {
         <div className="flex gap-20 justify-center flex-wrap mt-10 py-10">
     {
       data.map((item , index) => (
-       <ServiceCard cardAnimationVaritent={cardAnimationVaritent} index={index} item={item}  key={index}/>
+       <ServiceCard cardAnimationVaritent={cardAnimationVaritent} index={index} item={item}  key={index} hidden="true"/>
       ))
     }
     </div>

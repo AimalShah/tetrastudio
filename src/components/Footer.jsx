@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-4 lg:mt-0">
-        <h1 className="text-xs text-center">©Tertra Studio 2024.</h1>
+        <h1 className="text-xs text-center">©Tetra Studio 2024.</h1>
       </div>
 
       </div> 

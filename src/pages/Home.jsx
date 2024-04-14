@@ -148,13 +148,13 @@ export default function Home() {
 
 export const Hero = () => {
   return (
-    <motion.div className="h-[100vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center lg:mt-40">
+    <motion.div className="h-[80vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center lg:mt-40">
       <div className="blob z-0"></div>
       <motion.h1
         initial={{ y: 40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.3 }}
-        className="z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-white lg:mb-28"
+        className="z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28"
       >
         <motion.span className="block lg:inline">Visual.</motion.span>
         <motion.span className="block lg:inline">Branding.</motion.span>
@@ -198,7 +198,7 @@ export const About = () => {
     "& Branding",
   ];
   return (
-    <motion.div className=" h-screen continer mx-auto text-center h-3/4 flex flex-col items-center justify-center gap-20 py-20">
+    <motion.div className="continer mx-auto text-center h-3/4 flex flex-col items-center justify-start gap-20 py-20">
       <h1 className="text-3xl text-gray-600">Who we are</h1>
       <p className="mt-4 lg:text-3xl text-2xl font-semibold mx-10 flex justify-center flex-wrap gap-2 text-center">
         {arrStr.map((str, index) => (

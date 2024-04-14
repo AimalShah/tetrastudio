@@ -46,6 +46,6 @@ We welcome contributions from the community! If you'd like to contribute to this
 
 ## Contact
 
-For any inquiries or feedback, feel free to contact us at [contact@designagency.com](mailto:info@tetrastuio.net).
+For any inquiries or feedback, feel free to contact us at [info@tetrastudio.net](mailto:info@tetrastuio.net).
 
 Thank you for visiting our website!

@@ -60,7 +60,7 @@ export default function Contact() {
     <div className="h-screen">
       <div className="container mx-auto px-8 my-20 py-10 flex justify-center">
         <div className="lg:w-3/4 lg:ps-36">
-          <span className="text-lg">We are always happy to help 😇</span>
+          <span className="text-lg">We are always happy to help!</span>
           <h1 className="text-3xl font-semibold">Get in Touch</h1>
         </div>
       </div>
@@ -72,7 +72,7 @@ export default function Contact() {
                 <div className="flex flex-col lg:flex-row gap-8">
                   <input
                     type="text"
-                    className="border-b border-accent focus:outline-none px-2 w-full text-xs font-semibold"
+                    className="border-b border-accent focus:outline-none px-2 w-full text-xs font-semibold bg-whitesh"
                     placeholder="Name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
@@ -80,21 +80,20 @@ export default function Contact() {
                   />
                   <input
                     type="email"
-                    className="border-b border-accent focus:outline-none px-2 w-full text-xs font-semibold"
+                    className="border-b border-accent focus:outline-none px-2 w-full text-xs font-semibold bg-whitesh"
                     placeholder="Email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     required
                   />
                 </div>
-
                 <textarea
                   name=""
                   id=""
                   cols="30"
                   rows="10"
                   placeholder="Message"
-                  className="border-b px-2 border-accent focus:outline-none text-xs font-semibold"
+                  className="border-b px-2 border-accent focus:outline-none text-xs font-semibold bg-whitesh" 
                   value={body}
                   onChange={(e) => setBody(e.target.value)}
                   required

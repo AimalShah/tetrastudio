@@ -56,19 +56,28 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
       >
         <div className="flex flex-col justify-start ">
           <h1 className="text-xs">Get in touch</h1>
-          <p className="text-md mt-2">info@tetrastudio.net</p>
-
+          <a href="mailto:info@tetrastudio.net"><p className="text-md mt-2">info@tetrastudio.net</p></a>
           <div className="mt-12">
             <h1 className="text-sm">Socials</h1>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
+              <a href="" className="block">
               Instagram
+              </a>
             </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
+              <a href="" className="block">
               Facebook
+              </a>
             </h2>
-            <h2 className="text-md font-semibold mt-2 text-gray-500">Youtube</h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
+              <a href="" className="block">
+              Youtube
+              </a>
+              </h2>
+            <h2 className="text-md font-semibold mt-2 text-gray-500">
+              <a href="" className="block">
               twitter
+              </a>
             </h2>
           </div>
         </div>

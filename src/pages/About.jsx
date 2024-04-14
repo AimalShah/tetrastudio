@@ -6,15 +6,15 @@ import { useRef } from "react";
 const TeamCard = ({member}) => {
   return (
     <motion.div 
-    className="h-80 w-80 relative bg-white flex flex-col gap-4 justify-between items-center rounded-lg overflow-hidden pb-4">
+    className="h-96 w-80 relative  flex flex-col gap-4 justify-between items-center rounded-lg overflow-hidden pb-4">
       <motion.div 
-      className="h-full w-full bg-slate-900 rounded-lg">
-        <img src="https://images.unsplash.com/photo-1513152697235-fe74c283646a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  className="block w-full h-full object-cover rounded-t-lg saturate-0 hover:saturate-100"/>
+      className="h-full w-full rounded-lg">
+        <img src="https://images.unsplash.com/photo-1513152697235-fe74c283646a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""  className="block w-full h-72 object-cover rounded-3xl saturate-0 hover:saturate-100"/>
       </motion.div> 
       <div>
-        <h1 className="font-semibold text-xl">{member.name}</h1>
+        <h1 className="font-semibold text-2xl">{member.name}</h1>
       </div>
-      <div className="text-accent/60">
+      <div className="text-accent/60 text-lg">
         {member.profession}
       </div>
     </motion.div>
@@ -66,8 +66,10 @@ export default function About() {
         <h1 className="text-center w-full">About us</h1>
       </motion.div>
         <div className="w-full flex justify-center">
-          <p className=" lg:text-5xl text-xl px-20 text-center font-medium">
-          We launch digital products in the best way possible 
+          <p 
+          
+          className=" lg:text-5xl text-xl px-20 text-center font-medium lg:leading-[70px]">
+          We help you get more exposure digitally by serving you the best way possible 
           </p>
         </div>
       </motion.div>
@@ -82,8 +84,8 @@ export default function About() {
        initial={{y : 100}}
        whileInView={{y : 0 , transition : {duration : 1 ,  delay : 0.3}}}
        viewport={{once : true}}
-        className="w-full lg:text-2xl font-medium text-xl lg:leading-[40px] px-2 lg:px-0 text-center">
-        Embark on a voyage of boundless creativity with Tetra Studio, where imagination knows no limits. Founded in 2021, we stand as pioneers in the digital realm, offering a kaleidoscope of innovative services to bring your visions to life.
+        className="w-full lg:text-3xl font-medium text-xl lg:leading-[40px] px-2 lg:px-0 text-center">
+        Designing and building digital products is what we love to do, and we are awesome at it. We bet on success in every project we acce
         </motion.p>
       </div>
 

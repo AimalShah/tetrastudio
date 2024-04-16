@@ -1,6 +1,6 @@
 export const fadeInAnimationVariants = {
     initial : {
-      y: 100,
+      y: 50,
       opacity : 0,
     } , 
     animate : (index) => ({

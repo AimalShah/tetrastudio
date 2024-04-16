@@ -47,11 +47,12 @@ export function MobileNavMenu({ navLinks, handleClick }) {
 
 export function DesktopNavMenu({ navLinks, handleClick }) {
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <motion.div
         className="hidden lg:flex w-screen h-[100vh] gap-40 fixed bg-white top-30 left-0 z-10 pt-20 justify-center shadow-md"
         initial={{ clipPath: "circle(0.4% at 100% 46%)" }}
         animate={{ clipPath: "circle(70.7% at 50% 50%)" }}
+        exit={{clipPath: "circle(0.4% at 100% 46%)"}}
         transition={{ duration: 0.4 }}
       >
         <div className="flex flex-col justify-start ">

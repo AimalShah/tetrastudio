@@ -27,7 +27,7 @@ export const members = [
     {
       name : "Talha Athar",
       profession : "Video Editor",
-      image : "https://images.unsplash.com/photo-1513152697235-fe74c283646a?q=80&w=1548&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      image : "https://utfs.io/f/ff843b9b-617f-4036-bcee-aab024f8c5dc-1tkd7c.jpeg"
     },
     {
       name : "Muhammad Tawab",

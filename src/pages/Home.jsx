@@ -12,11 +12,11 @@ import {
   faDatabase,
   faPuzzlePiece,
 } from "@fortawesome/free-solid-svg-icons";
-import "./Blob.css";
+import "../utils/Blob.css";
 import Contact from "../components/Contact";
 import ServiceCard from "../components/ServiceCard";
-import { fadeInAnimationVariants } from "./anim";
-import { cardAnimationVaritent } from "./anim";
+import { fadeInAnimationVariants } from "../utils/anim";
+import { cardAnimationVaritent } from "../utils/anim";
 import Carousel from "../components/Carousel";
 
 

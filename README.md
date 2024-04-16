@@ -1,6 +1,6 @@
-# Design Agency Website
+# Tetra Studio Website
 
-Welcome to the repository for the Design Agency Website, built using React.js with Tailwind CSS, React Router, and Framer Motion!
+Welcome to the repository for the Tetra Studio Website, built using React.js with Tailwind CSS, React Router, and Framer Motion!
 
 ## Overview
 
@@ -20,7 +20,7 @@ This website serves as the online presence for our design agency, showcasing our
 - **React Router:** For client-side routing within the application.
 - **Framer Motion:** For creating smooth animations and transitions.
 - **React Router DOM:** Declarative routing for React.js.
-- **Axios:** Handling HTTP requests for fetching data.
+
 
 ## Getting Started
 
@@ -30,19 +30,7 @@ To run the website locally, follow these steps:
 2. Navigate to the project directory: `cd design-agency-website`
 3. Install dependencies: `npm install`
 4. Start the development server: `npm start`
-5. Open your browser and visit `http://localhost:3000` to view the website.
-
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to this project, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch for your feature: `git checkout -b feature-name`
-3. Implement your feature or fix.
-4. Commit your changes: `git commit -am 'Add new feature'`
-5. Push to the branch: `git push origin feature-name`
-6. Submit a pull request.
-
+5. Open your browser and visit `http://localhost:5173` to view the website.
 
 ## Contact
 

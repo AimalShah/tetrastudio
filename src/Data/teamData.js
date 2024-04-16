@@ -33,5 +33,10 @@ export const members = [
       name : "Muhammad Tawab",
       profession : "Junior 3d Artist",
       image : "https://utfs.io/f/1edade3e-ba9c-4e49-aa13-52e7b1fe20fe-1tkl6z.jpeg"
+    },
+    {
+      name : "Sajawal Mirza",
+      profession : "AI/Web Developer",
+      image : "https://utfs.io/f/9cc3fb59-69e4-42cb-a687-0950f09df749-usdbr1.jpeg"
     }
   ]

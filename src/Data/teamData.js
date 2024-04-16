@@ -21,7 +21,7 @@ export const members = [
     },
     {
       name : "Salahuddin",
-      profession : "Translator",
+      profession : "Voiceover Artist / Translator",
       image : "https://utfs.io/f/99999a51-d83c-4d0f-93f4-855f6e0ec921-z63yyz.jpeg"
     },
     {

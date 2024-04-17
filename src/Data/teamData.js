@@ -15,9 +15,9 @@ export const members = [
       image : "https://utfs.io/f/90b79d9c-a528-4c92-ba4c-8b6613cbbcdd-1j9eeo.jpeg"
     },
     {
-      name : "Khan Zadi",
+      name : "Khan Zaadi",
       profession : "3d Animator",
-      image : "https://st3.depositphotos.com/9998432/13335/v/450/depositphotos_133351974-stock-illustration-default-placeholder-woman.jpg"
+      image : "https://utfs.io/f/5eff2e12-f260-4a21-a2b4-b366ad6c75c5-hd0co4.jpeg"
     },
     {
       name : "Salahuddin",
@@ -37,6 +37,16 @@ export const members = [
     {
       name : "Sajawal Mirza",
       profession : "AI/Web Developer",
-      image : "https://utfs.io/f/9cc3fb59-69e4-42cb-a687-0950f09df749-usdbr1.jpeg"
+      image : "https://utfs.io/f/fe2e69a8-2f3a-425b-b59b-191027486a51-yx7dkp.jpeg"
+    },
+    {
+      name : "Zain Ul Abideen",
+      profession : "Graphic Designer / Motion Graphic Artist",
+      image : "https://utfs.io/f/bb1031c6-9917-40d0-8c17-1e893782dbd2-27yx8.jpeg"
+    }, 
+    {
+      name : "Adil Yousafzai",
+      profession : "Video Editor",
+      image : "https://utfs.io/f/4f756daa-02ff-4973-9e89-e05353ffc4fb-1s2h2.jpeg"
     }
   ]

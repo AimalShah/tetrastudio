@@ -1,12 +1,12 @@
 export const members = [
     {
       name : "Syed Hasan Ahmad",
-      profession : "Senior 3d Artist / Project Head",
+      profession : "Senior 3D Artist / Project Head",
       image : "https://utfs.io/f/9c2c324e-1d6a-4b69-8e48-2855b8e79001-1myz47.jpeg"
     },
     {
       name : "Raza Husain",
-      profession : "3d Artist",
+      profession : "3D Artist",
       image : "https://utfs.io/f/e6856466-72ac-42df-a874-bf4a1af17315-22vfa.jpeg"
     },
     {
@@ -16,7 +16,7 @@ export const members = [
     },
     {
       name : "Khan Zaadi",
-      profession : "3d Animator",
+      profession : "3D Animator",
       image : "https://utfs.io/f/5eff2e12-f260-4a21-a2b4-b366ad6c75c5-hd0co4.jpeg"
     },
     {
@@ -31,7 +31,7 @@ export const members = [
     },
     {
       name : "Muhammad Tawab",
-      profession : "Junior 3d Artist",
+      profession : "Junior 3D Artist",
       image : "https://utfs.io/f/1edade3e-ba9c-4e49-aa13-52e7b1fe20fe-1tkl6z.jpeg"
     },
     {

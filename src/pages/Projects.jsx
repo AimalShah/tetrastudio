@@ -18,7 +18,7 @@ export default function Projects() {
   }, [activeCategorie])
  
 
-  const categories = ["All" , "Graphic Design" , "3d animations" , "Video Editing" , "Ai" , "Web Dev"]
+  const categories = ["All" , "Graphic Design" , "3D Animations" , "Video Editing" , "AI" , "Web Dev"]
   return (
     <div className=" mt-[18vh]">
       <div className="flex justify-center flex-col items-center gap-8">

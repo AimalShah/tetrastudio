@@ -105,7 +105,7 @@ export const productsData = [
     },
     {
       id : 2 , 
-      categorie : "3d animations",
+      categorie : "3D Animations",
       projects : [
         {
           image:
@@ -165,7 +165,7 @@ export const productsData = [
     },
     {
       id  : 4 ,
-      categorie : "Ai",
+      categorie : "AI",
       projects : [
         {
           image:

@@ -41,12 +41,14 @@ export const members = [
   },
   {
     name: "Zain Ul Abideen",
-    profession: "Graphic Designer / Motion Graphic Artist",
+    profession: "Graphic & Motion Graphic Artist",
     image: "https://utfs.io/f/bb1031c6-9917-40d0-8c17-1e893782dbd2-27yx8.jpeg"
   },
   {
     name: "Adil Yousafzai",
     profession: "Video Editor",
     image: "https://utfs.io/f/4f756daa-02ff-4973-9e89-e05353ffc4fb-1s2h2.jpeg"
+
   },
 ];
+ 

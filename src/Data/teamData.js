@@ -48,6 +48,7 @@ export const members = [
     name: "Adil Yousafzai",
     profession: "Video Editor",
     image: "https://utfs.io/f/4f756daa-02ff-4973-9e89-e05353ffc4fb-1s2h2.jpeg"
-  }
+
+  },
 ];
-    
+ 

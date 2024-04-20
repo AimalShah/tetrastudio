@@ -18,7 +18,7 @@ import ServiceCard from "../components/ServiceCard";
 import { fadeInAnimationVariants } from "../utils/anim";
 import { cardAnimationVaritent } from "../utils/anim";
 import Carousel from "../components/Carousel";
-
+import SwipeCarousel from "../components/Testimonial";
 
 export default function Home() {
   
@@ -140,6 +140,11 @@ export default function Home() {
 
       <Serives services={services} />
       <Projects productsData={productsData} />
+
+      <div>
+        <h1 className="text-4xl font-semibold text-center mt-20 mb-10">What Clients says about us</h1>
+      <SwipeCarousel />
+      </div>
 
       <Contact />
     </div>

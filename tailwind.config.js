@@ -15,6 +15,9 @@ export default {
       },
       gridTemplateColumns : {
         'autofit' : 'repeat(autofit , minmax(250px , 1fr))'
+      },
+      fontFamily : {
+        "Garamond" : "'Cormorant Garamond', serif"
       }
     },
   },

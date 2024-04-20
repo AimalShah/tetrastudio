@@ -99,14 +99,13 @@ const Images = ({ imgIndex }) => {
         return (
           <motion.div
             key={idx}
-            
             animate={{
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="lg:h-[58vh] h-[80vh] container shrink-0 rounded-xl flex object-cover  shadow-lg bg-accent/40 lg:ps-6 px-2 "
+            className="lg:h-[58vh] h-[80vh] container shrink-0 rounded-xl flex object-cover  shadow-lg bg-accent/40  lg:p-0 px-2"
           > 
-          <div className=" w-full flex  flex-col justify-between gap-2 lg:items-start items-center py-4">
+          <div className=" w-full flex  flex-col justify-between gap-2 lg:items-start items-center py-4 ps-8">
             <div className="">
               <img src="https://utfs.io/f/9c2c324e-1d6a-4b69-8e48-2855b8e79001-1myz47.jpeg"
               className="lg:size-20  size-20 rounded-full border-2 border-black"

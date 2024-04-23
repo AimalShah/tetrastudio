@@ -15,6 +15,8 @@ function raf(time) {
   requestAnimationFrame(raf)
 }
 
+window.history.scrollRestoration = 'manual'
+
 requestAnimationFrame(raf)
   } , [])
  

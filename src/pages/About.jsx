@@ -53,7 +53,11 @@ export default function About() {
 
         {
           members.map((member , index) => (
-            <TeamCard member={member} key={index} />
+            <div key={index} 
+            className={`${index === 4  ? "" : ""}`}
+            >
+            <TeamCard member={member} />
+            </div>
           ))
         }
         </div>

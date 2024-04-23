@@ -6,3 +6,6 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: #F1F1F1;
 }
+html {
+   transition: 1s ease-in all; 
+}

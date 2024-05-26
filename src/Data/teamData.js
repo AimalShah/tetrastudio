@@ -14,11 +14,11 @@ export const members = [
     profession: "Software Developer",
     image: "https://utfs.io/f/90b79d9c-a528-4c92-ba4c-8b6613cbbcdd-1j9eeo.jpeg"
   },
-  {
-    name: "Khan Zaadi",
-    profession: "3D Animator",
-    image: "https://utfs.io/f/5eff2e12-f260-4a21-a2b4-b366ad6c75c5-hd0co4.jpeg"
-  },
+  // {
+  //   name: "Khan Zaadi",
+  //   profession: "3D Animator",
+  //   image: "https://utfs.io/f/5eff2e12-f260-4a21-a2b4-b366ad6c75c5-hd0co4.jpeg"
+  // },
   {
     name: "Salahuddin",
     profession: "Voiceover Artist / Translator",

@@ -116,16 +116,16 @@ function Navbar() {
       Link: "/services",
     },
     {
-      Page: "About Us",
-      Link: "/about",
-    },
-    {
       Page: "Projects",
       Link: "/projects",
     },
     {
       Page: "Contact",
       Link: "/contact",
+    },
+    {
+      Page: "About Us",
+      Link: "/about",
     },
   ];
 

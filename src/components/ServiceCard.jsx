@@ -1,28 +1,24 @@
-import { motion } from "framer-motion"
-import { Link } from "react-router-dom"
-export default function ServiceCard({cardAnimationVaritent , index , item , hidden}) {
+import { useNavigate } from "react-router-dom"
+export default function ServiceCard({index , item , hidden}) {
   const display = hidden === "true" ? "none" : "block"
+  const navigate = useNavigate();
+
   return (
-    <motion.div
-    variants={cardAnimationVaritent}
-    initial="initial"
-    whileInView="animate"
-    custom={index}
-    viewport={{ once: true }}
-    className="size-80 flex flex-col items-center justify-between bg-white p-2 rounded-lg shadow-md "
+    <div
+    onClick={() => navigate('/services')}
+    className="h-[350px] lg:w-[500px] w-[300px] lg:overflow-hidden flex-shrink-0 flex flex-col p-2 bg-black/10 rounded "
     >
-      <span className=" w-fit p-4 rounded-lg border border-accent text-accent">{item.icon}</span>
-      <h2 className="my-2 text-xl font-bold text-accent text-center">{item.title}</h2>
-      <p className="text-sm text-center text-accent ">{item.description}</p>
-      <Link to='/services' className="w-full">
-      <button 
-      style={{
-        display : display
-      }}
-      className="border border-accent hover:text-white hover:bg-accent w-full h-10 rounded-full mt-2 text-accent  font-semibold">
-          Learn More
-      </button>
-      </Link>
-    </motion.div>
+      <div className="border-b-2 mb-6">
+        <h2 className="pb-4">
+        0{index+1}
+        </h2>
+      </div>
+      <div className="space-y-6">
+        <h1 className="lg:text-3xl text-2xl font-medium">
+          {item.title}
+        </h1>
+        <p className="text-start font-normal">{item.description}</p>
+      </div>
+    </div>
   )
 }

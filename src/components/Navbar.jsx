@@ -13,7 +13,7 @@ export function MobileNavMenu({ navLinks, handleClick }) {
   return (
     <AnimatePresence>
       <motion.div
-        className="lg:hidden w-screen h-[90vh] flex flex-col gap-10 fixed bg-white top-18 left-0 z-50 pt-2 "
+        className="lg:hidden w-screen h-[90vh] flex flex-col gap-10 fixed  bg-white top-18 left-0 z-50 pt-2 "
         initial={{ clipPath: "circle(0.4% at 100% 0)" }}
         animate={{ clipPath: " circle(140.7% at 99% 0)" }}
         transition={{ duration: 0.4 }}
@@ -154,7 +154,7 @@ function Navbar() {
       visible : {y :0},
       hidden:{y : "-100%"}
     }}
-    animate = {hidden ? "hidden" : "visiblr"}
+    animate = {hidden ? "hidden" : "visible"}
     transition={{duration : 0.3}} 
     style={{
       backgroundColor : bg

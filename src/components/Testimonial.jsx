@@ -103,29 +103,25 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className="lg:h-[58vh] h-[80vh] container shrink-0 rounded-xl flex object-cover  shadow-lg bg-accent/40  lg:p-0 px-2"
+            className="lg:h-[68vh] h-[80vh] container shrink-0 flex object-cover lg:p-0 px-2 border-2 border-black "
           > 
-          <div className=" w-full flex  flex-col justify-between gap-2 lg:items-start items-center py-4 ps-8">
-            <div className="">
-              <img src="https://utfs.io/f/9c2c324e-1d6a-4b69-8e48-2855b8e79001-1myz47.jpeg"
-              className="lg:size-20  size-20 rounded-full border-2 border-black"
-              alt="" />
+          <div className="relative w-full flex justify-center flex-col lg:gap-20 gap-8 lg:items-start items-center p-8">
+            <div className="flex justify-center absolute lg:bottom-[94%] bottom-[98%] left-1/2 transform -translate-x-1/2 px-4 bg-[#F1F1F1] w-fit rounded-full">
+              <div className="lg:block hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z"/></svg>
             </div>
-            <div className="lg:w-3/4 lg:text-lg lg:text-start text-xl text-center font-semibold font-Garamond" >
-              <span className=" text-5xl font-bold"> &quot; </span>  {fakeTestimonials[idx]} <span className="  text-4xl font-bold">  &quot; </span>
+
+            <div className="lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M11 9.275c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275zm13 0c0 5.141-3.892 10.519-10 11.725l-.984-2.126c2.215-.835 4.163-3.742 4.38-5.746-2.491-.392-4.396-2.547-4.396-5.149 0-3.182 2.584-4.979 5.199-4.979 3.015 0 5.801 2.305 5.801 6.275z"/></svg>
             </div>
-            <div>
+            </div>
+            <div className="lg:text-2xl lg:text-center text-lg text-center font-semibold lg:mt-10" >
+              <span className="text-5xl font-semibold font-Garamond"> &quot; </span>  {fakeTestimonials[idx]} <span className="  text-4xl font-semibold font-Garamond">  &quot; </span>
+            </div>
+            <div className="text-center w-full"> 
              client Name - Compnay Name
             </div>
           </div>
-          <div 
-          style={{
-            backgroundImage: `url(${imgSrc})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-          className="w-full rounded-xl hidden lg:block"
-          ></div>
           </motion.div>
         );
       })}
@@ -151,13 +147,6 @@ const Dots = ({ imgIndex, setImgIndex }) => {
   );
 };
 
-const GradientEdges = () => {
-  return (
-    <>
-      <div className="pointer-events-none absolute bottom-0 left-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-r from-neutral-950/50 to-neutral-950/0" />
-      <div className="pointer-events-none absolute bottom-0 right-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-l from-neutral-950/50 to-neutral-950/0" />
-    </>
-  );
-};
+
 
 export default SwipeCarousel;

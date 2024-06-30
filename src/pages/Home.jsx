@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion , useScroll, useTransform} from "framer-motion";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -14,64 +14,34 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../utils/Blob.css";
 import Contact from "../components/Contact";
-import ServiceCard from "../components/ServiceCard";
-import { fadeInAnimationVariants } from "../utils/anim";
-import { cardAnimationVaritent } from "../utils/anim";
-import Carousel from "../components/Carousel";
 import SwipeCarousel from "../components/Testimonial";
+import Hero from "../components/home/Hero";
+import About from "../components/home/about";
+import Serives from "../components/home/services";
+import { Projects } from "../components/home/Projects";
+
 
 export default function Home() {
-  
   const productsData = [
     {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
+      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
+      title: "Beauty brand , e-commerece",
+      color: "#000000",
     },
     {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
+      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
+      title: "Beauty brand , e-commerece",
+      color: "#8C8C8C",
     },
     {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
+      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
+      title: "Beauty brand , e-commerece",
+      color: "#EFE8D3",
     },
     {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
-    },
-    {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
-    },
-    {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
-    },
-    {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
-    },
-    {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
-    },
-    {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
-    },
-    {
-      image:
-        "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      name: "Beauty brand , e-commerece",
+      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
+      title: "Beauty brand , e-commerece",
+      color: "#706D63",
     },
   ];
 
@@ -130,20 +100,20 @@ export default function Home() {
         "Enhance machine learning algorithms by labeling and annotating data with accuracy and consistency.",
       icon: <FontAwesomeIcon icon={faPuzzlePiece} />, // Entire Font Awesome icon element
     },
-  ]; 
+  ];
 
   return (
-    <div className="overflow-hidden  relative">
+    <div className="relative">
       <Hero />
-
       <About />
-
       <Serives services={services} />
       <Projects productsData={productsData} />
 
       <div>
-        <h1 className="text-4xl font-semibold text-center mt-20 mb-10">What Clients says about us</h1>
-      <SwipeCarousel />
+        <h1 className="text-4xl font-semibold text-center mt-20 mb-10">
+          What Clients says about us
+        </h1>
+        <SwipeCarousel />
       </div>
 
       <Contact />
@@ -151,110 +121,8 @@ export default function Home() {
   );
 }
 
-export const Hero = () => {
-  return (
-    <motion.div className="h-[80vh] pb-20 pt-6 lg:py-0 mx-auto relative flex flex-col items-center justify-center lg:mt-40">
-      <div className="blob z-0"></div>
-      <motion.h1
-        initial={{ y: 40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.3 }}
-        className="z-10 lg:text-5xl text-2xl min-w-0 font-semibold text-center text-accent lg:mb-28"
-      >
-        <motion.span className="block lg:inline">Visual.</motion.span>
-        <motion.span className="block lg:inline">Branding.</motion.span>
-        <motion.span className="block lg:inline">Digital.</motion.span> <br />
-        <motion.span className="block lg:inline lg:text-2xl text-xl">Serving Friendly</motion.span>
-      </motion.h1>
-      <motion.button
-        initial={{ y: 40, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, delay: 0.35 }}
-        className=" lg:hidden bg-accent text-white p-4 w-1/2 mt-4 rounded-full z-20"
-      >
-        <Link to="/contact" className="">
-          Get Quote
-        </Link>
-      </motion.button>
-      <Link to="/projects" className="z-20">
-        <motion.button
-          initial={{ y: 40, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 1, delay: 0.4 }}
-          className="lg:hidden text-lg mt-4 border-b border-accent text-accent"
-        >
-          See Projects
-        </motion.button>
-      </Link>
-    </motion.div>
-  );
-};
 
-export const About = () => {
-  const arrStr = [
-    "A",
-    "creative ",
-    "agency",
-    " with ",
-    "solid ",
-    "expertise",
-    "in",
-    "Visuals",
-    "& Branding",
-  ];
-  return (
-    <motion.div className="continer mx-auto text-center h-3/4 flex flex-col items-center justify-start gap-20 py-20">
-      <h1 className="text-3xl text-gray-600">Who we are</h1>
-      <p className="mt-4 lg:text-3xl text-2xl font-semibold mx-10 flex justify-center flex-wrap gap-2 text-center">
-        {arrStr.map((str, index) => (
-          <motion.p
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            custom={index}
-            key={index}
-            viewport={{ once: true }}            
-            className=""
-          >
-            {str + " "}
-          </motion.p>
-        ))}
-      </p>
-      <Link to="/about">
-        <button className="border border-accent p-4 rounded-full hover:bg-accent hover:text-white">
-          Learn More
-        </button>
-      </Link>
-    </motion.div>
-  );
-};
 
-export const Projects = ({ productsData }) => {
-  return (
-    <div className="lg:screen container mx-auto px-4 py-10 ">
-      <h1 className="text-center text-4xl font-semibold mb-10">Top Projects</h1>
-      {/* <div className="flex gap-20 justify-center flex-wrap">
-   
-  </div> */}
-      <Carousel arr={productsData} />
-    </div>
-  );
-};
 
-export const Serives = ({ services }) => {
-  return (
-    <div className="container mx-auto px-4 py-10">
-      <h1 className="text-center text-4xl font-semibold">What do we Offer</h1>
-      <div className="flex gap-20 justify-center flex-wrap mt-10 py-10">
-        {services.map((item, index) => (
-          <ServiceCard
-            cardAnimationVaritent={cardAnimationVaritent}
-            index={index}
-            item={item}
-            key={index}
-          />
-        ))}
-      </div>
-    </div>
-  );
-};
+
+

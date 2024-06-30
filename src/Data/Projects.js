@@ -4,75 +4,52 @@ export const productsData = [
       categorie : "All",
       projects : [
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },{
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },{
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },{
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },{
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },
-        {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },
-        {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },
-        {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
       ]
     },
@@ -82,24 +59,28 @@ export const productsData = [
       categorie : "Graphic Design",
       projects : [
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
       ]
     },
@@ -108,24 +89,28 @@ export const productsData = [
       categorie : "3D Animations",
       projects : [
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
       ]
     },
@@ -134,32 +119,28 @@ export const productsData = [
       categorie : "Video Editing" , 
       projects : [
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
       ]
     },
@@ -168,41 +149,28 @@ export const productsData = [
       categorie : "AI",
       projects : [
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },
-        {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
       ]
     },
@@ -211,50 +179,52 @@ export const productsData = [
       categorie : "Web Dev",
       projects : [
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
-        },  {
-          image:
-            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+           color: "#000000"
         },
         {
-          image:
+          src:
             "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-          name: "Beauty brand , e-commerece",
+          title: "Beauty brand , e-commerece",
+            color: "#8C8C8C"
+        },
+        {
+          src:
+            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
+          title: "Beauty brand , e-commerece",
+          color: "#EFE8D3"
+        },
+        {
+          src:
+            "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
+          title: "Beauty brand , e-commerece",
+          color: "#706D63"
         },
       ]
     }

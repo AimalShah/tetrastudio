@@ -6,7 +6,7 @@ export default function ServiceCard({index , item , hidden}) {
   return (
     <div
     onClick={() => navigate('/services')}
-    className="h-[350px] lg:w-[500px] w-[300px] lg:overflow-hidden flex-shrink-0 flex flex-col p-2 bg-black/10 rounded "
+    className="h-[350px] lg:w-[500px] w-[300px] lg:overflow-hidden flex-shrink-0 flex flex-col p-2 hover:bg-black/10 rounded "
     >
       <div className="border-b-2 mb-6">
         <h2 className="pb-4">

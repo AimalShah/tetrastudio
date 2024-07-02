@@ -9,3 +9,9 @@ body{
 html {
    transition: 1s ease-in all; 
 }
+
+dialog:modal {
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0%;
+  }

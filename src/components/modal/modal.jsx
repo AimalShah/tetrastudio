@@ -49,8 +49,7 @@ export default function Modal({modal, projects}){
                     return <div className={"modal"} style={{backgroundColor: "#8C8C8C"}} key={`modal_${index}`}>
                         <img
                         src={project.image.asset.url}
-                        width={300}
-                        height={0}
+                        className='object-cover w-[300px] h-[250px]'
                         alt="image"
                         />
                     </div>
@@ -63,7 +62,7 @@ export default function Modal({modal, projects}){
 
             >
              
-                View
+            View
      
             </motion.div>
         </>

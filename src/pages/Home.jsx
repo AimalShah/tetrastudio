@@ -19,31 +19,32 @@ import Hero from "../components/home/Hero";
 import About from "../components/home/about";
 import Serives from "../components/home/services";
 import { Projects } from "../components/home/Projects";
+import { useEffect, useState } from "react";
+import { client } from "../sanity/config";
+import { data } from "autoprefixer";
 
 
 export default function Home() {
-  const productsData = [
-    {
-      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      title: "Beauty brand , e-commerece",
-      color: "#000000",
-    },
-    {
-      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      title: "Beauty brand , e-commerece",
-      color: "#8C8C8C",
-    },
-    {
-      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      title: "Beauty brand , e-commerece",
-      color: "#EFE8D3",
-    },
-    {
-      src: "https://unblast.com/wp-content/uploads/2020/05/Website-Mockup.jpg",
-      title: "Beauty brand , e-commerece",
-      color: "#706D63",
-    },
-  ];
+    const [Data , setData] = useState([])
+
+
+  useEffect(() => {
+    client.fetch(`*[_type == "project"] { slug ,  title , image {
+  asset -> {
+    url
+  }
+} , 
+  categories[] -> {
+    title
+  }
+}`)
+    .then((data) => {
+      setData(data.splice(0 , 4))
+      console.log(data)
+    })    
+    .catch(err => console.log(err))
+  } , [])
+
 
   const services = [
     {
@@ -107,7 +108,7 @@ export default function Home() {
       <Hero />
       <About />
       <Serives services={services} />
-      <Projects productsData={productsData} />
+      <Projects productsData={Data} />
 
       <div>
         <h1 className="text-4xl font-semibold text-center mt-20 mb-10">

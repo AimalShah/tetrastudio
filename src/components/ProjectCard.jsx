@@ -4,15 +4,15 @@ import "./style.css"
 import { useNavigate } from 'react-router-dom';
 
 
-export default function ProjectCard({index, title, setModal}) {
+export default function ProjectCard({slug, index, title, setModal , category}) {
   const arr = [1,2,3,4,5]
   const navigate = useNavigate();
   return (
     <div onMouseEnter={() => {setModal({active: true, index})}} onMouseLeave={() => {setModal({active: false, index})}} className={"project"}
-    onClick={() => navigate("/projects")}
+    onClick={() => navigate(`/projects/${slug}`)}
     >
     <h2>{title}</h2>
-    <p>Design & Development</p>
+    <p>{category}</p>
 </div>
   );
 }

@@ -46,10 +46,9 @@ export default function Modal({modal, projects}){
                 >
                 {
                     projects.map( (project, index) => {
-                    const { src, color } = project
-                    return <div className={"modal"} style={{backgroundColor: color}} key={`modal_${index}`}>
+                    return <div className={"modal"} style={{backgroundColor: "#8C8C8C"}} key={`modal_${index}`}>
                         <img
-                        src={src}
+                        src={project.image.asset.url}
                         width={300}
                         height={0}
                         alt="image"

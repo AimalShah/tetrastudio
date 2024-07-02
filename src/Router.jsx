@@ -7,9 +7,9 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
-import SingleProject from "./pages/SingleProject";
 import Footer from "./components/Footer";
 import SubServices from "./pages/SubServices";
+import SingleProjectPage from "./pages/SingleProjectPage";
 
 function ScrollToTop() {
   const {pathname} = useLocation()
@@ -34,7 +34,7 @@ function Routers() {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />}></Route>
-          <Route path="/projects/:id" element={<SingleProject />} />
+          <Route path="/projects/:id" element={<SingleProjectPage />} />
         </Routes>
         <Footer />
       </Router>

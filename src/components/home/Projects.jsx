@@ -19,6 +19,8 @@ export const Projects = ({ productsData }) => {
                   title={project.title}
                   setModal={setModal}
                   key={index}
+                  slug={project.slug.current}
+                  category={project.categories[0].title}
                 />
               );
             })}

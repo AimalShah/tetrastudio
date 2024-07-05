@@ -36,7 +36,7 @@ export const members = [
   },
   {
     name: "Sajawal Mirza",
-    profession: "AI/Web Developer",
+    profession: "AI Artist/Web Developer",
     image: "https://utfs.io/f/fe2e69a8-2f3a-425b-b59b-191027486a51-yx7dkp.jpeg"
   },
   {

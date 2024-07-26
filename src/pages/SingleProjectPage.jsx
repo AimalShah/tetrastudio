@@ -63,11 +63,11 @@ export default function SingleProjectPage() {
     style={{marginTop : margin ,}}
     >
       <div className="">
-        <h1 className="text-5xl font-semibold">
+        <h1 className="lg:text-5xl text-2xl font-semibold">
         {projectData.title}
         </h1>
     </div>
-    <h1 className="text-4xl font-normal">Category :  {projectData.categories[0].title}</h1>
+    <h1 className="lg:text-4xl text-2xl font-normal">Category :  {projectData.categories[0].title}</h1>
     <div onClick={openDialog} className="lg:h-[600px]  w-full overflow-hidden rounded-xl shadow-gray-900 shadow-md">
       <img src={projectData.image.asset.url} alt="" className="h-full w-full object-cover" />
     </div>

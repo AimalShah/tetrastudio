@@ -52,7 +52,9 @@ export default function SingleProjectPage() {
 
          if(projectData == null){
             return (
-                <div>Loading...</div>
+              <div className="h-[80vh] grid place-items-center">
+                <div className="size-32 border-2 rounded-full border-t-accent border-l-accent animate-spin" />
+              </div>
             )
          }
    const  margin =  isOpen ? "0px" : "10rem"      

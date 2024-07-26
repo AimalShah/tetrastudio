@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <div className="mt-[18vh] flex flex-col gap-20">
       <div className="flex justify-center flex-col items-center gap-8">
-        <div className="flex flex-wrap items-center justify-center gap-4">
+        {/* <div className="flex flex-wrap items-center justify-center gap-4">
           {categories.map((categorie, index) => (
             <button
               className="text-sm min-w-20 p-2 mx-2 border border-accent rounded-full"
@@ -59,7 +59,8 @@ export default function Projects() {
               {categorie}
             </button>
           ))}
-        </div>
+        </div> */}
+        <h1 className="text-5xl font-semibold">Projects</h1>
       </div>
           <div
           className="flex flex-wrap gap-4 justify-center">

@@ -90,9 +90,12 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
               key={item.Link}
               className="mt-6 text-4xl font-semibold text-gray-500"
             >
-              <Link to={item.Link} onClick={handleClick}>
+              {
+                item.Page === "Contact" ? <a href="mailto:info@tetrastudio.net" target="_blank">Contact</a> :
+                <Link to={item.Link} onClick={handleClick}>
                 {item.Page}
               </Link>
+              }
             </h2>
           ))}
         </div>

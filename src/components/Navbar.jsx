@@ -2,12 +2,15 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-import { motion, AnimatePresence , useScroll , useMotionValueEvent} from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+} from "framer-motion";
 import { Link } from "react-router-dom";
 import Socials from "./Socials";
-import LogoImg from "../assets/Logo.svg"
-
-
+import LogoImg from "../assets/Logo.svg";
 
 export function MobileNavMenu({ navLinks, handleClick }) {
   return (
@@ -24,21 +27,27 @@ export function MobileNavMenu({ navLinks, handleClick }) {
               key={item.Link}
               className="mt-6 text-4xl font-semibold text-gray-500"
             >
-              <Link to={item.Link} onClick={handleClick}>
-                {item.Page}
-              </Link>
+              {item.Page === "Contact" ? (
+                <a href="mailto:info@tetrastudio.net" target="_blank">
+                  Contact
+                </a>
+              ) : (
+                <Link to={item.Link} onClick={handleClick}>
+                  {item.Page}
+                </Link>
+              )}
             </h2>
           ))}
         </div>
         <div className="text-center mt-4">
-          <Link to='/contact' onClick={handleClick}>
-          <button className="bg-accent px-4 py-4 w-80 rounded-full text-white font-semibold">
-            Get Quote
-          </button>
+          <Link to="/contact" onClick={handleClick}>
+            <button className="bg-accent px-4 py-4 w-80 rounded-full text-white font-semibold">
+              Get Quote
+            </button>
           </Link>
         </div>
         <div className="mt-2">
-          <Socials size={40}/>
+          <Socials size={40} />
         </div>
       </motion.div>
     </AnimatePresence>
@@ -52,32 +61,46 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
         className="hidden lg:flex w-screen h-[100vh] gap-40 fixed bg-white top-30 left-0 z-10 pt-20 justify-center shadow-md"
         initial={{ clipPath: "circle(0.4% at 100% 46%)" }}
         animate={{ clipPath: "circle(70.7% at 50% 50%)" }}
-        exit={{clipPath: "circle(0.4% at 100% 46%)"}}
+        exit={{ clipPath: "circle(0.4% at 100% 46%)" }}
         transition={{ duration: 0.4 }}
       >
         <div className="flex flex-col justify-start ">
           <h1 className="text-xs">Get in touch</h1>
-          <a href="mailto:info@tetrastudio.net"><p className="text-md mt-2">info@tetrastudio.net</p></a>
+          <a href="mailto:info@tetrastudio.net">
+            <p className="text-md mt-2">info@tetrastudio.net</p>
+          </a>
           <div className="mt-12">
             <h1 className="text-sm">Socials</h1>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="https://www.instagram.com/tetrastudiopk/" className="block">
-              Instagram
+              <a
+                href="https://www.instagram.com/tetrastudiopk/"
+                className="block"
+              >
+                Instagram
               </a>
             </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="https://www.facebook.com/tetrastudiopk" className="block">
-              Facebook
+              <a
+                href="https://www.facebook.com/tetrastudiopk"
+                className="block"
+              >
+                Facebook
               </a>
             </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="https://www.youtube.com/@tetrastudiopk" className="block">
-              Youtube
+              <a
+                href="https://www.youtube.com/@tetrastudiopk"
+                className="block"
+              >
+                Youtube
               </a>
-              </h2>
+            </h2>
             <h2 className="text-md font-semibold mt-2 text-gray-500">
-              <a href="https://www.linkedin.com/company/tetrastudiopk/" className="block">
-              LinkedIn
+              <a
+                href="https://www.linkedin.com/company/tetrastudiopk/"
+                className="block"
+              >
+                LinkedIn
               </a>
             </h2>
           </div>
@@ -90,12 +113,15 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
               key={item.Link}
               className="mt-6 text-4xl font-semibold text-gray-500"
             >
-              {
-                item.Page === "Contact" ? <a href="mailto:info@tetrastudio.net" target="_blank">Contact</a> :
+              {item.Page === "Contact" ? (
+                <a href="mailto:info@tetrastudio.net" target="_blank">
+                  Contact
+                </a>
+              ) : (
                 <Link to={item.Link} onClick={handleClick}>
-                {item.Page}
-              </Link>
-              }
+                  {item.Page}
+                </Link>
+              )}
             </h2>
           ))}
         </div>
@@ -105,8 +131,7 @@ export function DesktopNavMenu({ navLinks, handleClick }) {
 }
 
 function Navbar() {
-
-  const [hidden , setHidden] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
   const navLinks = [
@@ -136,39 +161,37 @@ function Navbar() {
     setIsActive(!isActive);
   };
 
-  const bg = isActive ? "white" : "transparent"
-  const {scrollY} = useScroll()
+  const bg = isActive ? "white" : "transparent";
+  const { scrollY } = useScroll();
 
-  useMotionValueEvent(scrollY , "change" , (latest) => {
-    const previous = scrollY.getPrevious()
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    const previous = scrollY.getPrevious();
 
-    if(latest > previous && latest > 50){
-      setHidden(true)
+    if (latest > previous && latest > 50) {
+      setHidden(true);
     } else {
-      setHidden(false)
+      setHidden(false);
     }
-
-  })
-
+  });
 
   return (
-    <motion.div 
-    variants={{
-      visible : {y :0},
-      hidden:{y : "-100%"}
-    }}
-    animate = {hidden ? "hidden" : "visible"}
-    transition={{duration : 0.3}} 
-    style={{
-      backgroundColor : bg
-    }}
-    className="fixed w-full top-0 z-50 px-4">
-
+    <motion.div
+      variants={{
+        visible: { y: 0 },
+        hidden: { y: "-100%" },
+      }}
+      animate={hidden ? "hidden" : "visible"}
+      transition={{ duration: 0.3 }}
+      style={{
+        backgroundColor: bg,
+      }}
+      className="fixed w-full top-0 z-50 px-4"
+    >
       <div className="flex justify-between items-center px-[5%]">
-        <Link to='/'>
-        <div className="text-4xl font-bold">
-          <img src={LogoImg} alt="logo" className="size-20" />
-        </div>
+        <Link to="/">
+          <div className="text-4xl font-bold">
+            <img src={LogoImg} alt="logo" className="size-20" />
+          </div>
         </Link>
         <div className="z-20">
           <button

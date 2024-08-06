@@ -45,8 +45,8 @@ export const members = [
     image : "https://utfs.io/f/911d7b7b-600d-45d6-9ea7-ee71e779ac84-dev7vu.jpeg"
   },
   {
-    name : "Aamir Khan",
-    profession : "Graphic Designer",
+    name : "Aamir Iqbal",
+    profession : "UI/UX Designer",
     image : "https://utfs.io/f/43b7a053-6882-4850-ba18-969b9d67f66e-1s95h.jpeg"
   }
 ];
